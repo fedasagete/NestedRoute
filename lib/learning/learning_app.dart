@@ -25,6 +25,11 @@ import 'lesson_copy.dart';
 import 'progress.dart';
 import 'scenarios.dart';
 import 'recommendations.dart';
+import 'lesson_guide.dart';
+import 'lesson_instruction.dart';
+import 'board_instructions.dart';
+import 'discovery_instructions.dart';
+import 'prerequisites.dart';
 
 class HerregaApp extends StatelessWidget {
   const HerregaApp({super.key, this.store, this.catalogue});
@@ -95,14 +100,26 @@ class _LearningHomeState extends State<_LearningHome> {
     return recommendScenario(widget.catalogue, progress)!;
   }
 
-  Future<void> open(LearningScenario scenario) async {
+  Future<void> open(LearningScenario scenario,
+      {bool returningToActivity = false}) async {
+    final basics = <LearningScenario>[];
+    for (final kind in basicsFor(scenario)) {
+      final foundation = widget.catalogue
+          .where((s) => s.kind == kind && s.level == 1)
+          .toList();
+      final next = recommendScenario(foundation, progress);
+      if (next != null) basics.add(next);
+    }
     await Navigator.of(context).push<void>(MaterialPageRoute(
         builder: (_) => _LessonScreen(
             scenario: scenario,
             progress: progress,
             onSave: save,
             english: english,
-            storageError: storageError)));
+            storageError: storageError,
+            basics: basics,
+            onOpenBasics: (s) => open(s, returningToActivity: true),
+            returningToActivity: returningToActivity)));
     if (mounted) setState(() {});
   }
 
@@ -388,11 +405,17 @@ class _LessonScreen extends StatefulWidget {
       required this.progress,
       required this.onSave,
       required this.english,
-      required this.storageError});
+      required this.storageError,
+      required this.basics,
+      required this.onOpenBasics,
+      required this.returningToActivity});
   final LearningScenario scenario;
   final ProgressState progress;
   final Future<bool> Function() onSave;
   final bool english, storageError;
+  final bool returningToActivity;
+  final List<LearningScenario> basics;
+  final ValueChanged<LearningScenario> onOpenBasics;
   @override
   State<_LessonScreen> createState() => _LessonScreenState();
 }
@@ -407,6 +430,8 @@ class _LessonScreenState extends State<_LessonScreen> {
   bool busy = false;
   late bool english, storageError;
   String? direction;
+  final guideAnchor = GlobalKey();
+  final boardAnchor = GlobalKey();
   final input = TextEditingController();
   @override
   void initState() {
@@ -478,6 +503,10 @@ class _LessonScreenState extends State<_LessonScreen> {
   @override
   Widget build(BuildContext context) {
     final topic = topicFor(scenario);
+    final List<LessonInstruction> instructions =
+        discoveryFor(scenario.id) == null
+            ? boardInstructions(scenario)
+            : discoveryInstructions(scenario.id);
     return Scaffold(
         appBar: AppBar(
             backgroundColor: const Color(0xfff6f5ef),
@@ -497,6 +526,20 @@ class _LessonScreenState extends State<_LessonScreen> {
                 child: Column(mainAxisSize: MainAxisSize.min, children: [
                   if (storageError) _storageWarning(),
                   Row(children: [
+                    if (phase == 0) ...[
+                      IconButton(
+                          tooltip:
+                              english ? 'Show the instructions' : 'Tartiiba',
+                          onPressed: () {
+                            final target = guideAnchor.currentContext;
+                            if (target != null) {
+                              Scrollable.ensureVisible(target,
+                                  duration: const Duration(milliseconds: 200));
+                            }
+                          },
+                          icon: const Icon(Icons.menu_book_rounded)),
+                      const SizedBox(width: 8),
+                    ],
                     if (phase == 0 || phase == 2) ...[
                       IconButton(
                           key: const ValueKey('lesson-help'),
@@ -512,225 +555,304 @@ class _LessonScreenState extends State<_LessonScreen> {
             child: Center(
                 child: ConstrainedBox(
                     constraints: const BoxConstraints(maxWidth: 720),
-                    child: ListView(
+                    child: SingleChildScrollView(
                         padding: const EdgeInsets.fromLTRB(16, 10, 16, 28),
-                        children: [
-                          Row(children: [
-                            for (var i = 0; i < 4; i++)
-                              Expanded(
-                                  child: Container(
-                                      height: 5,
-                                      margin: const EdgeInsets.symmetric(
-                                          horizontal: 3),
-                                      decoration: BoxDecoration(
-                                          color: i <= phase
-                                              ? topic.color
-                                              : const Color(0xffe2e8df),
-                                          borderRadius:
-                                              BorderRadius.circular(5))))
-                          ]),
-                          const SizedBox(height: 24),
-                          Text(
-                              english
-                                  ? [
-                                      'YOUR GOAL',
-                                      'WHAT YOU DISCOVERED',
-                                      'TRY A NEW CHALLENGE',
-                                      'WELL DONE'
-                                    ][phase]
-                                  : [
-                                      'KAAYYOO',
-                                      'HUBANNOO',
-                                      'SHAKALI',
-                                      'BAREEDA'
-                                    ][phase],
-                              style: TextStyle(
-                                  color: topic.color,
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.w900,
-                                  letterSpacing: 1.5)),
-                          const SizedBox(height: 10),
-                          if (phase == 0) ...[
-                            Text(goalMath(scenario),
-                                style: const TextStyle(
-                                    fontSize: 26, fontWeight: FontWeight.w900)),
-                            if (english)
-                              Padding(
-                                  padding: const EdgeInsets.only(top: 8),
-                                  child: Text(scenario.goal)),
-                            const SizedBox(height: 20),
-                            _panel(_board(), topic.color),
-                            const SizedBox(height: 16),
-                            Icon(
-                                correct
-                                    ? Icons.check_circle_rounded
-                                    : Icons.touch_app_rounded,
-                                color: correct
-                                    ? const Color(0xff418b61)
-                                    : const Color(0xff9daca7),
-                                size: 30),
-                          ],
-                          if (phase == 1) ...[
-                            const SizedBox(height: 10),
-                            _panel(
-                                Column(
-                                    key: const ValueKey('definition-card'),
-                                    children: [
-                                      Icon(topic.icon,
-                                          color: topic.color, size: 58),
-                                      const SizedBox(height: 20),
-                                      Text(definitionMath(scenario),
+                        child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              Row(children: [
+                                for (var i = 0; i < 4; i++)
+                                  Expanded(
+                                      child: Container(
+                                          height: 5,
+                                          margin: const EdgeInsets.symmetric(
+                                              horizontal: 3),
+                                          decoration: BoxDecoration(
+                                              color: i <= phase
+                                                  ? topic.color
+                                                  : const Color(0xffe2e8df),
+                                              borderRadius:
+                                                  BorderRadius.circular(5))))
+                              ]),
+                              const SizedBox(height: 24),
+                              Text(
+                                  english
+                                      ? [
+                                          'YOUR GOAL',
+                                          'WHAT YOU DISCOVERED',
+                                          'TRY A NEW CHALLENGE',
+                                          'WELL DONE'
+                                        ][phase]
+                                      : [
+                                          'KAAYYOO',
+                                          'HUBANNOO',
+                                          'SHAKALI',
+                                          'BAREEDA'
+                                        ][phase],
+                                  style: TextStyle(
+                                      color: topic.color,
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w900,
+                                      letterSpacing: 1.5)),
+                              const SizedBox(height: 10),
+                              if (phase == 0) ...[
+                                Text(goalMath(scenario),
+                                    style: const TextStyle(
+                                        fontSize: 26,
+                                        fontWeight: FontWeight.w900)),
+                                if (english)
+                                  Padding(
+                                      padding: const EdgeInsets.only(top: 8),
+                                      child: Text(scenario.goal)),
+                                const SizedBox(height: 20),
+                                Container(
+                                    key: guideAnchor,
+                                    child: LessonGuide(
+                                        key: ValueKey('guide-${scenario.id}'),
+                                        steps: instructions
+                                            .take(instructions.isNotEmpty
+                                                ? instructions.length - 1
+                                                : 0)
+                                            .toList(),
+                                        english: english,
+                                        color: topic.color)),
+                                Align(
+                                    alignment: Alignment.centerRight,
+                                    child: TextButton.icon(
+                                        key: const ValueKey('guide-play'),
+                                        onPressed: () {
+                                          final target =
+                                              boardAnchor.currentContext;
+                                          if (target != null) {
+                                            Scrollable.ensureVisible(target,
+                                                alignment: .05,
+                                                duration: const Duration(
+                                                    milliseconds: 200));
+                                          }
+                                        },
+                                        icon: const Icon(
+                                            Icons.arrow_downward_rounded),
+                                        label: Text(english
+                                            ? 'Try this step'
+                                            : 'Taphadhu'))),
+                                if (widget.basics.isNotEmpty) ...[
+                                  const SizedBox(height: 12),
+                                  Text(
+                                      english
+                                          ? 'Practise a simpler idea first'
+                                          : 'Bu’uura shaakali',
+                                      style: TextStyle(
+                                          color: topic.color,
+                                          fontWeight: FontWeight.w700)),
+                                  const SizedBox(height: 6),
+                                  for (final basic in widget.basics)
+                                    Align(
+                                        alignment: Alignment.centerLeft,
+                                        child: OutlinedButton.icon(
+                                            key: ValueKey(
+                                                'basics-${basic.kind.name}'),
+                                            onPressed: () =>
+                                                widget.onOpenBasics(basic),
+                                            icon: const Icon(
+                                                Icons.school_outlined),
+                                            label: Text(english
+                                                ? topics[basic.kind]!.english
+                                                : topics[basic.kind]!.oromo))),
+                                ],
+                                const SizedBox(height: 12),
+                                Container(
+                                    key: boardAnchor,
+                                    child: _panel(_board(), topic.color)),
+                                const SizedBox(height: 16),
+                                Icon(
+                                    correct
+                                        ? Icons.check_circle_rounded
+                                        : Icons.touch_app_rounded,
+                                    color: correct
+                                        ? const Color(0xff418b61)
+                                        : const Color(0xff9daca7),
+                                    size: 30),
+                              ],
+                              if (phase == 1) ...[
+                                const SizedBox(height: 10),
+                                _panel(
+                                    Column(
+                                        key: const ValueKey('definition-card'),
+                                        children: [
+                                          Icon(topic.icon,
+                                              color: topic.color, size: 58),
+                                          const SizedBox(height: 20),
+                                          if (instructions.isNotEmpty) ...[
+                                            Text(
+                                                english
+                                                    ? instructions.last.english
+                                                    : instructions.last.oromo,
+                                                key: const ValueKey(
+                                                    'plain-language-definition'),
+                                                textAlign: TextAlign.center,
+                                                style: const TextStyle(
+                                                    fontSize: 19, height: 1.5)),
+                                            const SizedBox(height: 16),
+                                          ],
+                                          Text(definitionMath(scenario),
+                                              textAlign: TextAlign.center,
+                                              style: const TextStyle(
+                                                  fontSize: 28,
+                                                  height: 1.6,
+                                                  fontWeight: FontWeight.w900)),
+                                          if (english)
+                                            Padding(
+                                                padding: const EdgeInsets.only(
+                                                    top: 16),
+                                                child: Text(
+                                                    scenario.explanation,
+                                                    style: const TextStyle(
+                                                        fontSize: 18,
+                                                        height: 1.5))),
+                                        ]),
+                                    topic.color),
+                                const SizedBox(height: 18),
+                                _englishWord(topic),
+                              ],
+                              if (phase == 2) ...[
+                                const SizedBox(height: 12),
+                                _panel(
+                                    Column(children: [
+                                      const Icon(Icons.extension_rounded,
+                                          color: Color(0xffd19445), size: 48),
+                                      const SizedBox(height: 18),
+                                      Text(transferMath(scenario),
                                           textAlign: TextAlign.center,
                                           style: const TextStyle(
-                                              fontSize: 28,
-                                              height: 1.6,
+                                              fontSize: 26,
+                                              height: 1.5,
                                               fontWeight: FontWeight.w900)),
                                       if (english)
                                         Padding(
                                             padding:
-                                                const EdgeInsets.only(top: 16),
-                                            child: Text(scenario.explanation,
-                                                style: const TextStyle(
-                                                    fontSize: 18,
-                                                    height: 1.5))),
-                                    ]),
-                                topic.color),
-                            const SizedBox(height: 18),
-                            _englishWord(topic),
-                          ],
-                          if (phase == 2) ...[
-                            const SizedBox(height: 12),
-                            _panel(
-                                Column(children: [
-                                  const Icon(Icons.extension_rounded,
-                                      color: Color(0xffd19445), size: 48),
-                                  const SizedBox(height: 18),
-                                  Text(transferMath(scenario),
-                                      textAlign: TextAlign.center,
-                                      style: const TextStyle(
-                                          fontSize: 26,
-                                          height: 1.5,
-                                          fontWeight: FontWeight.w900)),
-                                  if (english)
-                                    Padding(
-                                        padding: const EdgeInsets.only(top: 12),
-                                        child: Text(scenario.transferPrompt)),
-                                  const SizedBox(height: 22),
-                                  if (discoveryFor(scenario.id)
-                                          ?.transferDirection !=
-                                      null)
-                                    Padding(
-                                        padding:
-                                            const EdgeInsets.only(bottom: 16),
-                                        child: Row(children: [
-                                          for (final sign in ['<', '>'])
-                                            Expanded(
-                                                child: Padding(
-                                              padding:
-                                                  const EdgeInsets.symmetric(
-                                                      horizontal: 4),
-                                              child: OutlinedButton(
-                                                  key: ValueKey(sign == '<'
-                                                      ? 'transfer-direction-less'
-                                                      : 'transfer-direction-greater'),
-                                                  style: OutlinedButton.styleFrom(
-                                                      backgroundColor:
-                                                          direction == sign
-                                                              ? topic.color
-                                                                  .withOpacity(
-                                                                      .16)
-                                                              : null),
-                                                  onPressed: busy
-                                                      ? null
-                                                      : () => setState(() {
-                                                            direction = sign;
-                                                            wrong = false;
-                                                          }),
-                                                  child: Text(sign,
-                                                      style: const TextStyle(
-                                                          fontSize: 32,
-                                                          fontWeight: FontWeight
-                                                              .w900))),
-                                            )),
-                                        ])),
-                                  TextField(
-                                      key: const ValueKey('transfer-input'),
-                                      controller: input,
-                                      enabled: !busy,
-                                      keyboardType:
-                                          const TextInputType.numberWithOptions(
-                                              signed: true),
-                                      textAlign: TextAlign.center,
-                                      style: const TextStyle(
-                                          fontSize: 30,
-                                          fontWeight: FontWeight.w800),
-                                      decoration: InputDecoration(
-                                          hintText: '?',
-                                          errorText: wrong
-                                              ? (english
-                                                  ? 'Try another way. You can do it.'
-                                                  : 'Irra deebi’ii yaali.')
-                                              : null),
-                                      onSubmitted: (_) => check()),
-                                  if (transferHelp)
-                                    Padding(
-                                        padding: const EdgeInsets.only(top: 16),
-                                        child: Text(
-                                            '${discoveryFor(scenario.id)?.transferDirection ?? '='} ${scenario.transferAnswer}',
-                                            style: const TextStyle(
-                                                fontSize: 26,
-                                                color: Color(0xff4c8c72)))),
-                                ]),
-                                topic.color),
-                          ],
-                          if (phase == 3) ...[
-                            const SizedBox(height: 20),
-                            _panel(
-                                Column(
-                                    key: const ValueKey('completion-card'),
-                                    children: [
-                                      Icon(
-                                          transferHelp
-                                              ? Icons.favorite_rounded
-                                              : Icons.stars_rounded,
-                                          color: const Color(0xffdaa33e),
-                                          size: 92),
-                                      const SizedBox(height: 18),
-                                      Text(
-                                          english
-                                              ? (transferHelp
-                                                  ? 'Good practice!'
-                                                  : 'You solved it!')
-                                              : 'Bareeda!',
-                                          style: const TextStyle(
-                                              fontSize: 31,
-                                              fontWeight: FontWeight.w900)),
-                                      const SizedBox(height: 12),
-                                      Text(
-                                          transferMath(scenario)
-                                              .replaceAll('⋯', direction ?? '')
-                                              .replaceAll('?',
-                                                  '${scenario.transferAnswer}'),
+                                                const EdgeInsets.only(top: 12),
+                                            child:
+                                                Text(scenario.transferPrompt)),
+                                      const SizedBox(height: 22),
+                                      if (discoveryFor(scenario.id)
+                                              ?.transferDirection !=
+                                          null)
+                                        Padding(
+                                            padding: const EdgeInsets.only(
+                                                bottom: 16),
+                                            child: Row(children: [
+                                              for (final sign in ['<', '>'])
+                                                Expanded(
+                                                    child: Padding(
+                                                  padding: const EdgeInsets
+                                                      .symmetric(horizontal: 4),
+                                                  child: OutlinedButton(
+                                                      key: ValueKey(sign == '<'
+                                                          ? 'transfer-direction-less'
+                                                          : 'transfer-direction-greater'),
+                                                      style: OutlinedButton.styleFrom(
+                                                          backgroundColor:
+                                                              direction == sign
+                                                                  ? topic.color
+                                                                      .withOpacity(
+                                                                          .16)
+                                                                  : null),
+                                                      onPressed: busy
+                                                          ? null
+                                                          : () => setState(() {
+                                                                direction =
+                                                                    sign;
+                                                                wrong = false;
+                                                              }),
+                                                      child: Text(sign,
+                                                          style: const TextStyle(
+                                                              fontSize: 32,
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w900))),
+                                                )),
+                                            ])),
+                                      TextField(
+                                          key: const ValueKey('transfer-input'),
+                                          controller: input,
+                                          enabled: !busy,
+                                          keyboardType: const TextInputType
+                                              .numberWithOptions(signed: true),
                                           textAlign: TextAlign.center,
                                           style: const TextStyle(
-                                              fontSize: 22, height: 1.5)),
-                                      const SizedBox(height: 12),
-                                      Text(transferHelp ? '↻' : '★',
-                                          style: const TextStyle(
-                                              fontSize: 33,
-                                              color: Color(0xffbf903b))),
+                                              fontSize: 30,
+                                              fontWeight: FontWeight.w800),
+                                          decoration: InputDecoration(
+                                              hintText: '?',
+                                              errorText: wrong
+                                                  ? (english
+                                                      ? 'Try another way. You can do it.'
+                                                      : 'Irra deebi’ii yaali.')
+                                                  : null),
+                                          onSubmitted: (_) => check()),
+                                      if (transferHelp)
+                                        Padding(
+                                            padding:
+                                                const EdgeInsets.only(top: 16),
+                                            child: Text(
+                                                '${discoveryFor(scenario.id)?.transferDirection ?? '='} ${scenario.transferAnswer}',
+                                                style: const TextStyle(
+                                                    fontSize: 26,
+                                                    color: Color(0xff4c8c72)))),
                                     ]),
-                                topic.color),
-                          ],
-                          const SizedBox(height: 24),
-                          Text(
-                              scenario.sourceGrade == null
-                                  ? (english ? 'Foundation skill' : 'Bu’uura')
-                                  : 'Kutaa ${scenario.sourceGrade} • ${scenario.sourcePage}',
-                              textAlign: TextAlign.center,
-                              style: const TextStyle(
-                                  color: Color(0xff87988e), fontSize: 12)),
-                        ])))));
+                                    topic.color),
+                              ],
+                              if (phase == 3) ...[
+                                const SizedBox(height: 20),
+                                _panel(
+                                    Column(
+                                        key: const ValueKey('completion-card'),
+                                        children: [
+                                          Icon(
+                                              transferHelp
+                                                  ? Icons.favorite_rounded
+                                                  : Icons.stars_rounded,
+                                              color: const Color(0xffdaa33e),
+                                              size: 92),
+                                          const SizedBox(height: 18),
+                                          Text(
+                                              english
+                                                  ? (transferHelp
+                                                      ? 'Good practice!'
+                                                      : 'You solved it!')
+                                                  : 'Bareeda!',
+                                              style: const TextStyle(
+                                                  fontSize: 31,
+                                                  fontWeight: FontWeight.w900)),
+                                          const SizedBox(height: 12),
+                                          Text(
+                                              transferMath(scenario)
+                                                  .replaceAll(
+                                                      '⋯', direction ?? '')
+                                                  .replaceAll('?',
+                                                      '${scenario.transferAnswer}'),
+                                              textAlign: TextAlign.center,
+                                              style: const TextStyle(
+                                                  fontSize: 22, height: 1.5)),
+                                          const SizedBox(height: 12),
+                                          Text(transferHelp ? '↻' : '★',
+                                              style: const TextStyle(
+                                                  fontSize: 33,
+                                                  color: Color(0xffbf903b))),
+                                        ]),
+                                    topic.color),
+                              ],
+                              const SizedBox(height: 24),
+                              Text(
+                                  scenario.sourceGrade == null
+                                      ? (english
+                                          ? 'Foundation skill'
+                                          : 'Bu’uura')
+                                      : 'Kutaa ${scenario.sourceGrade} • ${scenario.sourcePage}',
+                                  textAlign: TextAlign.center,
+                                  style: const TextStyle(
+                                      color: Color(0xff87988e), fontSize: 12)),
+                            ]))))));
   }
 
   Widget _primaryAction() {
@@ -738,8 +860,14 @@ class _LessonScreenState extends State<_LessonScreen> {
       return FilledButton.icon(
           key: const ValueKey('lesson-home'),
           onPressed: () => Navigator.of(context).pop(),
-          icon: const Icon(Icons.home_rounded),
-          label: Text(english ? 'Learning path' : 'Deebi’i'));
+          icon: Icon(widget.returningToActivity
+              ? Icons.arrow_back_rounded
+              : Icons.home_rounded),
+          label: Text(english
+              ? (widget.returningToActivity
+                  ? 'Back to this activity'
+                  : 'Learning path')
+              : 'Deebi’i'));
     }
     if (phase == 2) {
       return FilledButton.icon(

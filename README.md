@@ -8,12 +8,15 @@ Offline Afaan Oromo maths catch-up through direct interaction, adapted from the 
 
 Tap **Jalqabi** for recommended arithmetic practice. The home screen also offers topic exploration, English number-word recognition, and eight maths discovery labs. Try airplane mode and reopening the app after completing a question. Translations remain provisional; recordings and broader English reading lessons are not included yet.
 
+Each game now opens with **Akkaataa taphachuu**, short instructions you can move through using the arrows. Tap **Taphadhu** to reach the board; the book button returns to the instructions. **Bu’uura shaakali** offers simpler related practice and Back returns to the original game. The explanation after construction includes a short Afaan Oromo sentence alongside the formula.
+
 ## What is implemented
 
 - 1,200 deterministic rounds across twelve mathematical representations.
 - Eight additional discovery labs: fraction division, signed multiplication, ratio mixtures, Pythagoras, circle angles, inequalities, square roots and congruence.
 - ONE–FOUR printed English word recognition, with changed matching order.
 - Goal → construction → short explanation → separate transfer → completion.
+- Visible step instructions for every board and lab, with optional related foundation practice that preserves the original game.
 - Local progress in Android app-private preferences and browser localStorage; bundled fonts; no game or progress network request.
 - A foundation-first recommendation route, with unrestricted topic exploration.
 

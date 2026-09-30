@@ -4,6 +4,8 @@
 
 Install it on your Android phone and tap **Jalqabi**. Complete one short arithmetic game, then reopen the app in airplane mode to try offline practice and saved progress. You can also choose the English number game and eight discovery labs from the home screen.
 
+The updated preview adds **Akkaataa taphachuu** instructions, arrows for the next instruction, **Taphadhu** to reach the board, and a book button to return to instructions. Harder activities offer **Bu’uura shaakali** for related simpler practice. Returning from that practice keeps the original activity intact.
+
 This APK is an optimized development preview signed with the development key. The preview branch keeps the APK alongside its corresponding source so it can be downloaded without a separate file service. Translations are provisional. Full current exam coverage, science lessons and recorded audio are still pending.
 
 Build verification: APK ZIP integrity and signature checked; SHA-256 is recorded in [Herrega.apk.sha256](Herrega.apk.sha256). Native installation and app restart still need phone testing.

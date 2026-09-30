@@ -27,6 +27,7 @@ Future<void> start(WidgetTester tester, ProgressStore store) async {
 }
 
 Future<void> construct(WidgetTester tester) async {
+  await tester.ensureVisible(find.byKey(const ValueKey('line-right')));
   await tester.tap(find.byKey(const ValueKey('line-right')));
   await tester.tap(find.byKey(const ValueKey('line-right')));
   await tester.pumpAndSettle();
@@ -99,6 +100,7 @@ void main() {
       (tester) async {
     final backend = DelayedStorage();
     await start(tester, ProgressStore(backend: backend));
+    await tester.ensureVisible(find.byKey(const ValueKey('line-right')));
     await tester.tap(find.byKey(const ValueKey('line-right')));
     await tester.tap(find.byKey(const ValueKey('line-right')));
     await tester.pumpAndSettle();

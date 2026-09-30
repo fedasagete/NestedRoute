@@ -21,9 +21,13 @@ void main() {
     await tester.tap(card);
     await tester.pumpAndSettle();
     expect(find.byKey(const ValueKey('definition-card')), findsNothing);
+    await tester
+        .ensureVisible(find.byKey(const ValueKey('fraction-division-split')));
     await tester.tap(find.byKey(const ValueKey('fraction-division-split')));
     await tester.pumpAndSettle();
     for (var i = 0; i < 6; i++) {
+      await tester
+          .ensureVisible(find.byKey(ValueKey('fraction-division-slot-$i')));
       await tester.tap(find.byKey(ValueKey('fraction-division-slot-$i')));
       await tester.pump();
     }
@@ -43,13 +47,15 @@ void main() {
     expect(tester.takeException(), isNull);
   });
 
-  testWidgets('English matching hides the outer answer reference', (tester) async {
+  testWidgets('English matching hides the outer answer reference',
+      (tester) async {
     tester.view.physicalSize = const Size(390, 844);
     tester.view.devicePixelRatio = 1;
     addTearDown(tester.view.resetPhysicalSize);
     addTearDown(tester.view.resetDevicePixelRatio);
-    await tester.pumpWidget(HerregaApp(store: ProgressStore(backend: MemoryProgressBackend()),
-      catalogue: [buildScenarios().first]));
+    await tester.pumpWidget(HerregaApp(
+        store: ProgressStore(backend: MemoryProgressBackend()),
+        catalogue: [buildScenarios().first]));
     await tester.pumpAndSettle();
     final card = find.byKey(const ValueKey('discovery-englishNumbers'));
     await tester.scrollUntilVisible(card, 250);

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the debug APK with the workspace-local pinned Android toolchain."""
+"""Build an Android APK with the workspace-local pinned toolchain."""
 
 import argparse
 import hashlib
@@ -17,7 +17,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--release', action='store_true', help='Build a small optimized preview with the repository development signing key.')
     args = parser.parse_args()
-    repo = Path(__file__).resolve().parents[1]
+    repo = Path(os.environ.get("HERREGA_REPO_ROOT", str(Path(__file__).resolve().parents[1]))).resolve()
     base = Path(os.environ.get("HERREGA_TOOLCHAINS", "/workspace/toolchains")).resolve()
     flutter = base / "flutter-3.10.6/bin/flutter"
     jdk = base / "java17/usr/lib/jvm/java-17-openjdk-amd64"
