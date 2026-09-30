@@ -1,24 +1,27 @@
 # Herrega
 
-Offline Afaan Oromo maths catch-up through direct interaction, adapted from the supplied Oromia Grade 7 and 8 maths textbooks. Start with counting steps, equal groups and sharing; discover harder ideas by moving tiles, balancing, reflecting and overlaying shapes. Every lesson ends with a separate question. Help and independently solved questions are tracked separately.
+Offline Afaan Oromo maths catch-up through direct interaction, adapted from the supplied Oromia Grade 7 and 8 maths textbooks. Start with a banana order, matching baskets and a shared picnic. Watch an object move, repeat the action, and see the mathematical meaning after reaching the goal. New-number questions are optional; helped practice and independent answers are tracked separately.
 
 ## Try the Android preview
 
 [Download Herrega.apk](previews/Herrega.apk). Android 5.0 or later. This is an optimized development preview, signed with the development key, for testing outside the Play Store.
 
-Tap **Jalqabi** for recommended arithmetic practice. The home screen also offers topic exploration, English number-word recognition, and eight maths discovery labs. Try airplane mode and reopening the app after completing a question. Translations remain provisional; recordings and broader English reading lessons are not included yet.
+Tap **Jalqabi** for the next short mission. A first-time beginner mission demonstrates an actual move, restores the objects, and gives the learner control. Complete the goal and choose **Tapha itti aanu** to keep playing. The home screen also offers topic exploration, English number-word recognition, and eight maths discovery labs. Try airplane mode and reopening the app after completing a goal. Translations remain provisional; recordings and broader English reading lessons are not included yet.
 
-Each game now opens with **Akkaataa taphachuu**, short instructions you can move through using the arrows. Tap **Taphadhu** to reach the board; the book button returns to the instructions. **Bu’uura shaakali** offers simpler related practice and Back returns to the original game. The explanation after construction includes a short Afaan Oromo sentence alongside the formula.
+Beginner missions put the objects first. **Na ilaali** demonstrates again; the book button opens optional instructions. **Furmaata** explains a new-number question one short step at a time. **Waliin** is optional same-phone turn-taking; **Kophaa** is solo. Harder activities retain their instruction guides and **Bu’uura shaakali** links to simpler related practice. Returning from that practice preserves the original activity.
 
 ## What is implemented
 
 - 1,200 deterministic rounds across twelve mathematical representations.
 - Eight additional discovery labs: fraction division, signed multiplication, ratio mixtures, Pythagoras, circle angles, inequalities, square roots and congruence.
 - ONE–FOUR printed English word recognition, with changed matching order.
-- Goal → construction → short explanation → separate transfer → completion.
-- Visible step instructions for every board and lab, with optional related foundation practice that preserves the original game.
+- Three tangible beginner games replace 74 existing numeric rounds; no extra numerical variants are counted as new games.
+- Opening addition, packing, sharing and fraction rounds change one parameter at a time within each familiar representation.
+- Goal → construction → short explanation → next mission; an optional separate transfer checks independent understanding.
+- Worked transfer solutions for all 1,200 rounds and nine labs. Viewing a solution cannot earn an independent star.
+- Optional instructions and related foundation practice that preserves the original game.
 - Local progress in Android app-private preferences and browser localStorage; bundled fonts; no game or progress network request.
-- A foundation-first recommendation route, with unrestricted topic exploration.
+- Practice goals advance the suggested route. Optional offline cooperation never claims individual mastery.
 
 [Curriculum catalogue](docs/learning/catalogue.md) contains 89 teaching blueprints and 1,424 checked design slots. Those design slots are not additional implemented screens. [Coverage and learning route](docs/learning/coverage-and-route.md) records exactly which textbook concepts are represented and what still needs implementation. Complete chapter coverage, current ministry-exam alignment, science lessons, learner trials and reviewed translations/audio remain future work.
 

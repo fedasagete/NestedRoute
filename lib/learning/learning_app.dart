@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import '../games/number_line_board.dart';
+import '../games/market_order_board.dart';
+import '../games/packing_mission_board.dart';
+import '../games/picnic_sharing_board.dart';
+import '../games/mission_art.dart';
 import '../games/equal_groups_board.dart';
 import '../games/sharing_board.dart';
 import '../games/fraction_tiles_board.dart';
@@ -30,6 +34,8 @@ import 'lesson_instruction.dart';
 import 'board_instructions.dart';
 import 'discovery_instructions.dart';
 import 'prerequisites.dart';
+import 'worked_solutions.dart';
+import 'mission_instructions.dart';
 
 class HerregaApp extends StatelessWidget {
   const HerregaApp({super.key, this.store, this.catalogue});
@@ -71,6 +77,8 @@ class _LearningHome extends StatefulWidget {
 class _LearningHomeState extends State<_LearningHome> {
   ProgressState progress = ProgressState();
   bool loading = true, storageError = false, english = false;
+  bool cooperative = false;
+  int teamTurn = 0;
   @override
   void initState() {
     super.initState();
@@ -97,11 +105,12 @@ class _LearningHomeState extends State<_LearningHome> {
   }
 
   LearningScenario get recommended {
-    return recommendScenario(widget.catalogue, progress)!;
+    return recommendScenario(widget.catalogue, progress,
+        cooperative: cooperative, includePractice: true)!;
   }
 
   Future<void> open(LearningScenario scenario,
-      {bool returningToActivity = false}) async {
+      {bool returningToActivity = false, bool replace = false}) async {
     final basics = <LearningScenario>[];
     for (final kind in basicsFor(scenario)) {
       final foundation = widget.catalogue
@@ -110,7 +119,7 @@ class _LearningHomeState extends State<_LearningHome> {
       final next = recommendScenario(foundation, progress);
       if (next != null) basics.add(next);
     }
-    await Navigator.of(context).push<void>(MaterialPageRoute(
+    final route = MaterialPageRoute<void>(
         builder: (_) => _LessonScreen(
             scenario: scenario,
             progress: progress,
@@ -119,7 +128,16 @@ class _LearningHomeState extends State<_LearningHome> {
             storageError: storageError,
             basics: basics,
             onOpenBasics: (s) => open(s, returningToActivity: true),
-            returningToActivity: returningToActivity)));
+            returningToActivity: returningToActivity,
+            cooperative: cooperative,
+            initialTurn: teamTurn,
+            onTurnChanged: (turn) => teamTurn = turn,
+            onNext: () => open(recommended, replace: true)));
+    if (replace) {
+      await Navigator.of(context).pushReplacement<void, void>(route);
+    } else {
+      await Navigator.of(context).push<void>(route);
+    }
     if (mounted) setState(() {});
   }
 
@@ -163,7 +181,13 @@ class _LearningHomeState extends State<_LearningHome> {
                             onPressed: () => setState(() => english = !english),
                             icon: const Icon(Icons.translate_rounded)),
                       ]),
-                      const SizedBox(height: 24),
+                      const SizedBox(height: 14),
+                      Row(children: [
+                        Expanded(child: _modeButton(false)),
+                        const SizedBox(width: 8),
+                        Expanded(child: _modeButton(true)),
+                      ]),
+                      const SizedBox(height: 14),
                       Container(
                           padding: const EdgeInsets.all(24),
                           decoration: BoxDecoration(
@@ -190,24 +214,29 @@ class _LearningHomeState extends State<_LearningHome> {
                                               letterSpacing: 1.2))),
                                 ]),
                                 const SizedBox(height: 17),
-                                Text(
-                                    english
-                                        ? 'Play.\nDiscover.'
-                                        : 'Taphadhu.\nBaradhu.',
-                                    style: TextStyle(
-                                        fontSize:
-                                            MediaQuery.of(context).size.width <
-                                                    360
-                                                ? 26
-                                                : 31,
-                                        height: 1.18,
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.w900)),
+                                Row(children: [
+                                  Expanded(
+                                      child: Text(
+                                          english
+                                              ? 'Make it happen.'
+                                              : 'Taphadhu.\nBaradhu.',
+                                          style: TextStyle(
+                                              fontSize: MediaQuery.of(context)
+                                                          .size
+                                                          .width <
+                                                      360
+                                                  ? 26
+                                                  : 31,
+                                              height: 1.18,
+                                              color: Colors.white,
+                                              fontWeight: FontWeight.w900))),
+                                  const MissionPerson(
+                                      size: 74,
+                                      happy: true,
+                                      color: Color(0xffd5b05d)),
+                                ]),
                                 const SizedBox(height: 18),
-                                Text(
-                                    english
-                                        ? topics[next.kind]!.english
-                                        : topics[next.kind]!.oromo,
+                                Text(_missionName(next, english),
                                     style: const TextStyle(
                                         color: Colors.white70, fontSize: 18)),
                                 const SizedBox(height: 12),
@@ -233,15 +262,33 @@ class _LearningHomeState extends State<_LearningHome> {
                       const SizedBox(height: 22),
                       Row(children: [
                         Expanded(
-                            child: _stat('★', progress.masteredCount,
-                                english ? 'Independent' : 'Hubannoo')),
+                            child: _stat(
+                                '✓',
+                                progress.practiceCount,
+                                english
+                                    ? 'Goals completed'
+                                    : 'Tapha xumurame')),
                         const SizedBox(width: 12),
                         Expanded(
-                            child: _stat('↻', progress.practiceCount,
-                                english ? 'Practised' : 'Shaakala')),
+                            child: _stat('★', progress.masteredCount,
+                                english ? 'Solved alone' : 'Ofii furame')),
                       ]),
                       if (storageError) _storageWarning(),
                       const SizedBox(height: 18),
+                      Text(english ? 'Pick a mission' : 'Tapha filadhu',
+                          style: const TextStyle(
+                              fontSize: 20, fontWeight: FontWeight.w800)),
+                      const SizedBox(height: 10),
+                      for (final kind in [
+                        GameKind.numberLine,
+                        GameKind.equalGroups,
+                        GameKind.sharing
+                      ])
+                        if (widget.catalogue.any((s) => s.kind == kind))
+                          Padding(
+                              padding: const EdgeInsets.only(bottom: 10),
+                              child: _missionCard(kind)),
+                      const SizedBox(height: 8),
                       _discoveryCard(discoveryActivities.firstWhere(
                           (a) => a.scenario.id == 'discovery-englishNumbers')),
                       const SizedBox(height: 26),
@@ -311,6 +358,44 @@ class _LearningHomeState extends State<_LearningHome> {
                 color: Color(0xff326b61))),
         Text(label, style: const TextStyle(color: Color(0xff738c86))),
       ]));
+
+  Widget _modeButton(bool friends) => OutlinedButton.icon(
+      key: ValueKey(friends ? 'mode-friends' : 'mode-solo'),
+      style: OutlinedButton.styleFrom(
+          minimumSize: const Size(48, 52),
+          backgroundColor:
+              cooperative == friends ? const Color(0xffdceaca) : Colors.white),
+      onPressed: () => setState(() => cooperative = friends),
+      icon: Icon(friends ? Icons.people_alt_rounded : Icons.person_rounded),
+      label: Text(english
+          ? (friends ? 'Together' : 'Solo')
+          : (friends ? 'Waliin' : 'Kophaa')));
+
+  Widget _missionCard(GameKind kind) {
+    final choices = widget.catalogue.where((s) => s.kind == kind).toList();
+    final chosen = recommendScenario(choices, progress, includePractice: true)!;
+    return Material(
+        color: const Color(0xfffff9ec),
+        borderRadius: BorderRadius.circular(22),
+        child: Semantics(
+            button: true,
+            child: InkWell(
+                key: ValueKey('mission-${kind.name}'),
+                borderRadius: BorderRadius.circular(22),
+                onTap: () => open(chosen),
+                child: Padding(
+                    padding: const EdgeInsets.all(15),
+                    child: Row(children: [
+                      const MissionPerson(size: 46, happy: true),
+                      const SizedBox(width: 12),
+                      Expanded(
+                          child: Text(_missionName(chosen, english),
+                              style: const TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.w800))),
+                      const Icon(Icons.play_arrow_rounded,
+                          color: Color(0xff477e65)),
+                    ])))));
+  }
 
   Widget _discoveryCard(DiscoveryActivity activity) => Material(
       color: Colors.white,
@@ -390,6 +475,41 @@ class _LearningHomeState extends State<_LearningHome> {
   }
 }
 
+bool _isTangible(LearningScenario s) {
+  if (discoveryFor(s.id) != null) return false;
+  final v = s.values;
+  switch (s.kind) {
+    case GameKind.numberLine:
+      return v['start']! >= 0 &&
+          v['delta']! > 0 &&
+          v['start']! + v['delta']! <= 12;
+    case GameKind.equalGroups:
+      return v['groups']! <= 4 && v['each']! <= 5;
+    case GameKind.sharing:
+      return v['people']! <= 4 &&
+          v['total']! <= 20 &&
+          v['total']! ~/ v['people']! <= 5;
+    default:
+      return false;
+  }
+}
+
+String _missionName(LearningScenario s, bool english) {
+  if (!_isTangible(s)) {
+    return english ? topics[s.kind]!.english : topics[s.kind]!.oromo;
+  }
+  switch (s.kind) {
+    case GameKind.numberLine:
+      return english ? 'Fill the banana order' : 'Ajaja muuzii guuti';
+    case GameKind.equalGroups:
+      return english ? 'Pack matching baskets' : 'Garee walqixa guuti';
+    case GameKind.sharing:
+      return english ? 'Share the picnic' : 'Nyaata walqixa hirii';
+    default:
+      return english ? topics[s.kind]!.english : topics[s.kind]!.oromo;
+  }
+}
+
 Widget _storageWarning() => const Padding(
     key: ValueKey('storage-warning'),
     padding: EdgeInsets.all(12),
@@ -408,7 +528,11 @@ class _LessonScreen extends StatefulWidget {
       required this.storageError,
       required this.basics,
       required this.onOpenBasics,
-      required this.returningToActivity});
+      required this.returningToActivity,
+      required this.cooperative,
+      required this.initialTurn,
+      required this.onTurnChanged,
+      required this.onNext});
   final LearningScenario scenario;
   final ProgressState progress;
   final Future<bool> Function() onSave;
@@ -416,6 +540,10 @@ class _LessonScreen extends StatefulWidget {
   final bool returningToActivity;
   final List<LearningScenario> basics;
   final ValueChanged<LearningScenario> onOpenBasics;
+  final bool cooperative;
+  final int initialTurn;
+  final ValueChanged<int> onTurnChanged;
+  final VoidCallback onNext;
   @override
   State<_LessonScreen> createState() => _LessonScreenState();
 }
@@ -430,6 +558,7 @@ class _LessonScreenState extends State<_LessonScreen> {
   bool busy = false;
   late bool english, storageError;
   String? direction;
+  late int teamTurn;
   final guideAnchor = GlobalKey();
   final boardAnchor = GlobalKey();
   final input = TextEditingController();
@@ -439,6 +568,7 @@ class _LessonScreenState extends State<_LessonScreen> {
     scenario = widget.scenario;
     english = widget.english;
     storageError = widget.storageError;
+    teamTurn = widget.initialTurn;
   }
 
   @override
@@ -451,6 +581,41 @@ class _LessonScreenState extends State<_LessonScreen> {
     if (mounted && correct != value) setState(() => correct = value);
   }
 
+  void passTurn() {
+    if (!widget.cooperative) return;
+    setState(() => teamTurn = 1 - teamTurn);
+    widget.onTurnChanged(teamTurn);
+  }
+
+  void _showSteps(List<LessonInstruction> steps, {bool solution = false}) {
+    if (solution) help();
+    showModalBottomSheet<void>(
+        context: context,
+        isScrollControlled: true,
+        builder: (context) => SafeArea(
+            child: SingleChildScrollView(
+                padding: const EdgeInsets.all(18),
+                child: Column(mainAxisSize: MainAxisSize.min, children: [
+                  Container(
+                      key: ValueKey(solution
+                          ? 'worked-solution'
+                          : 'optional-instructions'),
+                      child: LessonGuide(
+                          steps: steps,
+                          english: english,
+                          title: solution
+                              ? (english ? 'Solution' : 'Furmaata')
+                              : null,
+                          color: topicFor(scenario).color)),
+                  const SizedBox(height: 8),
+                  TextButton(
+                      key: ValueKey(
+                          solution ? 'solution-close' : 'instructions-close'),
+                      onPressed: () => Navigator.of(context).pop(),
+                      child: Text(english ? 'Back to play' : 'Deebi’i')),
+                ]))));
+  }
+
   void help() => setState(() {
         if (phase == 0) {
           constructionHelp = true;
@@ -458,12 +623,18 @@ class _LessonScreenState extends State<_LessonScreen> {
           transferHelp = true;
         }
       });
-  Future<void> proceed() async {
-    if (busy || phase > 1 || phase == 0 && !correct) return;
+  Future<void> proceed({required int expectedPhase}) async {
+    if (busy ||
+        phase != expectedPhase ||
+        phase > 1 ||
+        phase == 0 && !correct ||
+        widget.cooperative && expectedPhase == 1) {
+      return;
+    }
     if (phase == 0) {
       setState(() => busy = true);
-      widget.progress
-          .recordConstruction(scenario.id, assisted: constructionHelp);
+      widget.progress.recordConstruction(scenario.id,
+          assisted: constructionHelp || widget.cooperative);
       final saved = await widget.onSave();
       if (!mounted) return;
       storageError = storageError || !saved;
@@ -487,8 +658,8 @@ class _LessonScreenState extends State<_LessonScreen> {
     final success = answer == scenario.transferAnswer &&
         (requiredDirection == null || direction == requiredDirection);
     setState(() => busy = true);
-    widget.progress
-        .recordTransfer(scenario.id, correct: success, assisted: transferHelp);
+    widget.progress.recordTransfer(scenario.id,
+        correct: success, assisted: transferHelp || widget.cooperative);
     final saved = await widget.onSave();
     if (!mounted) return;
     FocusScope.of(context).unfocus();
@@ -503,9 +674,12 @@ class _LessonScreenState extends State<_LessonScreen> {
   @override
   Widget build(BuildContext context) {
     final topic = topicFor(scenario);
+    final tangible = _isTangible(scenario);
     final List<LessonInstruction> instructions =
         discoveryFor(scenario.id) == null
-            ? boardInstructions(scenario)
+            ? (tangible
+                ? missionInstructions(scenario)
+                : boardInstructions(scenario))
             : discoveryInstructions(scenario.id);
     return Scaffold(
         appBar: AppBar(
@@ -531,6 +705,12 @@ class _LessonScreenState extends State<_LessonScreen> {
                           tooltip:
                               english ? 'Show the instructions' : 'Tartiiba',
                           onPressed: () {
+                            if (tangible) {
+                              _showSteps(instructions
+                                  .take(instructions.length - 1)
+                                  .toList());
+                              return;
+                            }
                             final target = guideAnchor.currentContext;
                             if (target != null) {
                               Scrollable.ensureVisible(target,
@@ -561,7 +741,7 @@ class _LessonScreenState extends State<_LessonScreen> {
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
                               Row(children: [
-                                for (var i = 0; i < 4; i++)
+                                for (var i = 0; i < (phase < 2 ? 2 : 4); i++)
                                   Expanded(
                                       child: Container(
                                           height: 5,
@@ -574,7 +754,11 @@ class _LessonScreenState extends State<_LessonScreen> {
                                               borderRadius:
                                                   BorderRadius.circular(5))))
                               ]),
-                              const SizedBox(height: 24),
+                              const SizedBox(height: 12),
+                              if (widget.cooperative && phase == 0) ...[
+                                _teamRibbon(),
+                                const SizedBox(height: 10),
+                              ],
                               Text(
                                   english
                                       ? [
@@ -596,45 +780,47 @@ class _LessonScreenState extends State<_LessonScreen> {
                                       letterSpacing: 1.5)),
                               const SizedBox(height: 10),
                               if (phase == 0) ...[
-                                Text(goalMath(scenario),
-                                    style: const TextStyle(
-                                        fontSize: 26,
-                                        fontWeight: FontWeight.w900)),
-                                if (english)
-                                  Padding(
-                                      padding: const EdgeInsets.only(top: 8),
-                                      child: Text(scenario.goal)),
-                                const SizedBox(height: 20),
-                                Container(
-                                    key: guideAnchor,
-                                    child: LessonGuide(
-                                        key: ValueKey('guide-${scenario.id}'),
-                                        steps: instructions
-                                            .take(instructions.isNotEmpty
-                                                ? instructions.length - 1
-                                                : 0)
-                                            .toList(),
-                                        english: english,
-                                        color: topic.color)),
-                                Align(
-                                    alignment: Alignment.centerRight,
-                                    child: TextButton.icon(
-                                        key: const ValueKey('guide-play'),
-                                        onPressed: () {
-                                          final target =
-                                              boardAnchor.currentContext;
-                                          if (target != null) {
-                                            Scrollable.ensureVisible(target,
-                                                alignment: .05,
-                                                duration: const Duration(
-                                                    milliseconds: 200));
-                                          }
-                                        },
-                                        icon: const Icon(
-                                            Icons.arrow_downward_rounded),
-                                        label: Text(english
-                                            ? 'Try this step'
-                                            : 'Taphadhu'))),
+                                if (!tangible) ...[
+                                  Text(goalMath(scenario),
+                                      style: const TextStyle(
+                                          fontSize: 26,
+                                          fontWeight: FontWeight.w900)),
+                                  if (english)
+                                    Padding(
+                                        padding: const EdgeInsets.only(top: 8),
+                                        child: Text(scenario.goal)),
+                                  const SizedBox(height: 20),
+                                  Container(
+                                      key: guideAnchor,
+                                      child: LessonGuide(
+                                          key: ValueKey('guide-${scenario.id}'),
+                                          steps: instructions
+                                              .take(instructions.isNotEmpty
+                                                  ? instructions.length - 1
+                                                  : 0)
+                                              .toList(),
+                                          english: english,
+                                          color: topic.color)),
+                                  Align(
+                                      alignment: Alignment.centerRight,
+                                      child: TextButton.icon(
+                                          key: const ValueKey('guide-play'),
+                                          onPressed: () {
+                                            final target =
+                                                boardAnchor.currentContext;
+                                            if (target != null) {
+                                              Scrollable.ensureVisible(target,
+                                                  alignment: .05,
+                                                  duration: const Duration(
+                                                      milliseconds: 200));
+                                            }
+                                          },
+                                          icon: const Icon(
+                                              Icons.arrow_downward_rounded),
+                                          label: Text(english
+                                              ? 'Try this step'
+                                              : 'Taphadhu'))),
+                                ],
                                 if (widget.basics.isNotEmpty) ...[
                                   const SizedBox(height: 12),
                                   Text(
@@ -712,7 +898,19 @@ class _LessonScreenState extends State<_LessonScreen> {
                                         ]),
                                     topic.color),
                                 const SizedBox(height: 18),
-                                _englishWord(topic),
+                                if (!tangible || english) _englishWord(topic),
+                                if (!widget.cooperative) ...[
+                                  const SizedBox(height: 12),
+                                  TextButton.icon(
+                                      key: const ValueKey('lesson-continue'),
+                                      onPressed: busy
+                                          ? null
+                                          : () => proceed(expectedPhase: 1),
+                                      icon: const Icon(Icons.extension_rounded),
+                                      label: Text(english
+                                          ? 'Try a new number'
+                                          : 'Lakkoofsa haaraa yaali')),
+                                ],
                               ],
                               if (phase == 2) ...[
                                 const SizedBox(height: 12),
@@ -799,6 +997,19 @@ class _LessonScreenState extends State<_LessonScreen> {
                                                 style: const TextStyle(
                                                     fontSize: 26,
                                                     color: Color(0xff4c8c72)))),
+                                      const SizedBox(height: 8),
+                                      TextButton.icon(
+                                          key: const ValueKey('solution-open'),
+                                          onPressed: busy
+                                              ? null
+                                              : () => _showSteps(
+                                                  workedSolution(scenario),
+                                                  solution: true),
+                                          icon: const Icon(Icons
+                                              .play_circle_outline_rounded),
+                                          label: Text(english
+                                              ? 'Show the solution'
+                                              : 'Furmaata')),
                                     ]),
                                     topic.color),
                               ],
@@ -856,6 +1067,21 @@ class _LessonScreenState extends State<_LessonScreen> {
   }
 
   Widget _primaryAction() {
+    if (phase == 1) {
+      return FilledButton.icon(
+          key: ValueKey(widget.cooperative ? 'team-next' : 'mission-next'),
+          onPressed: busy
+              ? null
+              : (widget.returningToActivity
+                  ? () => Navigator.of(context).pop()
+                  : widget.onNext),
+          icon: Icon(widget.returningToActivity
+              ? Icons.arrow_back_rounded
+              : Icons.play_arrow_rounded),
+          label: Text(widget.returningToActivity
+              ? (english ? 'Back to this activity' : 'Deebi’i')
+              : (english ? 'Next mission' : 'Tapha itti aanu')));
+    }
     if (phase == 3) {
       return FilledButton.icon(
           key: const ValueKey('lesson-home'),
@@ -878,7 +1104,7 @@ class _LessonScreenState extends State<_LessonScreen> {
     }
     return FilledButton.icon(
         key: const ValueKey('lesson-continue'),
-        onPressed: !busy && (phase == 1 || correct) ? proceed : null,
+        onPressed: !busy && correct ? () => proceed(expectedPhase: 0) : null,
         icon: const Icon(Icons.arrow_forward_rounded),
         label: Text(english
             ? (phase == 0 ? 'See the idea' : 'Try it yourself')
@@ -914,6 +1140,42 @@ class _LessonScreenState extends State<_LessonScreen> {
         ]))
       ]));
 
+  Widget _teamRibbon() => Container(
+      key: const ValueKey('team-progress'),
+      padding: const EdgeInsets.all(8),
+      decoration: BoxDecoration(
+          color: const Color(0xffe6ecdd),
+          borderRadius: BorderRadius.circular(18)),
+      child: Row(children: [
+        for (var player = 0; player < 2; player++)
+          Expanded(
+              child: Container(
+                  key: player == teamTurn
+                      ? ValueKey('team-turn-${player + 1}')
+                      : null,
+                  padding: const EdgeInsets.symmetric(vertical: 5),
+                  decoration: BoxDecoration(
+                      color: player == teamTurn ? Colors.white : null,
+                      borderRadius: BorderRadius.circular(14)),
+                  child: Column(children: [
+                    MissionPerson(
+                        size: 34,
+                        happy: player == teamTurn,
+                        color: player == 0
+                            ? const Color(0xff477e75)
+                            : const Color(0xffba713e)),
+                    Text('${english ? 'Friend' : 'Hiriyyaa'} ${player + 1}',
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                            fontSize: 12, fontWeight: FontWeight.w700)),
+                  ]))),
+        IconButton(
+            key: const ValueKey('team-pass-turn'),
+            tooltip: english ? 'Pass the turn' : 'Wal jijjiiraa',
+            onPressed: passTurn,
+            icon: const Icon(Icons.swap_horiz_rounded)),
+      ]));
+
   Widget _board() {
     final key = ValueKey(scenario.id);
     switch (scenario.id) {
@@ -946,18 +1208,54 @@ class _LessonScreenState extends State<_LessonScreen> {
     }
     switch (scenario.kind) {
       case GameKind.numberLine:
+        if (_isTangible(scenario)) {
+          return MarketOrderBoard(
+              key: key,
+              scenario: scenario,
+              onResult: result,
+              showHint: constructionHelp,
+              english: english,
+              onHelpUsed: help,
+              onAction: passTurn,
+              demonstrateOnStart:
+                  !widget.progress.entry(scenario.id).construction);
+        }
         return NumberLineBoard(
             key: key,
             scenario: scenario,
             onResult: result,
             showHint: constructionHelp);
       case GameKind.equalGroups:
+        if (_isTangible(scenario)) {
+          return PackingMissionBoard(
+              key: key,
+              scenario: scenario,
+              onResult: result,
+              showHint: constructionHelp,
+              english: english,
+              onHelpUsed: help,
+              onAction: passTurn,
+              demonstrateOnStart:
+                  !widget.progress.entry(scenario.id).construction);
+        }
         return EqualGroupsBoard(
             key: key,
             scenario: scenario,
             onResult: result,
             showHint: constructionHelp);
       case GameKind.sharing:
+        if (_isTangible(scenario)) {
+          return PicnicSharingBoard(
+              key: key,
+              scenario: scenario,
+              onResult: result,
+              showHint: constructionHelp,
+              english: english,
+              onHelpUsed: help,
+              onAction: passTurn,
+              demonstrateOnStart:
+                  !widget.progress.entry(scenario.id).construction);
+        }
         return SharingBoard(
             key: key,
             scenario: scenario,

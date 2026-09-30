@@ -8,10 +8,12 @@ class LessonGuide extends StatefulWidget {
       {super.key,
       required this.steps,
       required this.english,
-      required this.color});
+      required this.color,
+      this.title});
   final List<LessonInstruction> steps;
   final bool english;
   final Color color;
+  final String? title;
 
   @override
   State<LessonGuide> createState() => _LessonGuideState();
@@ -42,7 +44,7 @@ class _LessonGuideState extends State<LessonGuide> {
               icon: const Icon(Icons.arrow_back_rounded)),
           Expanded(
               child: Text(
-                  '${widget.english ? 'How to play' : 'Akkaataa taphachuu'}\n${step + 1} / ${widget.steps.length}',
+                  '${widget.title ?? (widget.english ? 'How to play' : 'Akkaataa taphachuu')}\n${step + 1} / ${widget.steps.length}',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                       color: widget.color,

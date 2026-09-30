@@ -23,3 +23,40 @@ Reusable cloud configuration: the complete install script and startup instructio
 Internal browser check before the guidance update: a complete arithmetic lesson rejected a wrong transfer, persisted a correct transfer, reloaded offline with the exact same progress record and opened an interactive next lesson. Both 320px and 390px views passed with no external request or JavaScript exception. Browser loader assets were warmed under service-worker control before offline reload; native Android bundles its assets and needs no such browser warm-up. Updated-guidance browser checks are recorded separately when run.
 
 Guided preview delivery verified: source/APK commit `a5c4c22bd9e6935d2ecee1f8bb2dd845347eaf56` is on GitHub. Its browser build and the updated smoke helper passed at both phone widths, including visible instructions, Taphadhu navigation, wrong/correct transfer and offline restoration. The complete suite passed 161 tests, the analyzer is clean, and the APK checksum is recorded in guided-preview-validation.md. The working tree is ready for the next learner feedback iteration.
+
+Sequenced mission feedback: the user disliked the abstract counters/formulas and
+wanted enjoyable learning without unexplained jumps. Friends were clarified as
+an example rather than the main feature. Three tangible banana/order/basket/
+picnic games replace 74 existing numeric rounds. First-entry teacher moves use
+the actual objects, restore learner work, and never complete the goal on the
+learner's behalf. The first 12 practice rounds change one parameter at a time
+within each representation; new-number checks are optional. Friends remain an
+optional same-phone mode, counted as supported practice. Goal completion and
+solved-alone counts are labeled separately, avoiding a numerical claim about
+the learner's total understanding.
+
+New solution support: all 1,209 transfer questions have short numbered bilingual
+derivations. Mathematical steps derive changed values independently rather
+than reading the answer field. Viewing them marks the transfer as assisted.
+Oromo phrasing still needs educator review; full advanced prerequisites are
+not claimed.
+
+Review-driven corrections: preserved source tray slots and control positions;
+reset shell correctness after changing scenarios; fixed rapid +1 taps to read
+the current supply; guarded Continue callbacks against skipping the meaning
+after an immediate save; and forced cooperative answers to remain assisted.
+Actual-shell probes then caught first teaching moves running below the visible
+viewport. Automatic and manual examples now reveal receiving objects before
+moving them, lock input during preparation and cancel stale pending starts.
+Six real-shell regressions verify the first moved fruit is visible at 320×640
+with 1.6 text, both solo and friends. Scope review has no remaining Critical or
+Important findings. Final release verification and artifact details are in
+sequenced-preview-validation.md.
+
+Release verification completed: 251 tests pass, analysis is clean, and the
+optimized Android APK's ZIP integrity and signature are valid. Real browser
+scrolling/taps at 320 and 390 pixels complete the opening order, matching
+baskets and equal-sharing picnic offline, with saved progress restored and
+no external requests or browser exceptions. The source and its matching APK
+are delivered together on the existing authorized preview branch. APK SHA-256:
+133f79dff8acaf1a9332882789bdd105177aa7dac9cb2abd9ac9d080e27b426a.

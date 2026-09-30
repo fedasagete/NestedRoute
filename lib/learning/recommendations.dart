@@ -23,6 +23,22 @@ const recommendedPracticeRoute = <PracticeRouteStage>[
   PracticeRouteStage(GameKind.probability, 1),
 ];
 
+// Shared goals advance through practice; they are not independent assessments.
+const cooperativePracticeRoute = <PracticeRouteStage>[
+  PracticeRouteStage(GameKind.numberLine, 3),
+  PracticeRouteStage(GameKind.equalGroups, 3),
+  PracticeRouteStage(GameKind.sharing, 3),
+  PracticeRouteStage(GameKind.fractionTiles, 3),
+  PracticeRouteStage(GameKind.areaGrid, 1),
+  PracticeRouteStage(GameKind.balance, 1),
+  PracticeRouteStage(GameKind.angleBuilder, 1),
+  PracticeRouteStage(GameKind.similarity, 1),
+  PracticeRouteStage(GameKind.volume, 1),
+  PracticeRouteStage(GameKind.sets, 1),
+  PracticeRouteStage(GameKind.data, 1),
+  PracticeRouteStage(GameKind.probability, 1),
+];
+
 /// Recommendations never lock an activity or change the learner's progress.
 ///
 /// Only independently solved transfer questions advance the introduction.
@@ -30,8 +46,11 @@ const recommendedPracticeRoute = <PracticeRouteStage>[
 /// representations, using the easiest remaining level in each family. Empty
 /// catalogues return null; a completed catalogue offers a stable review round.
 LearningScenario? recommendScenario(
-    List<LearningScenario> catalogue, ProgressState progress) {
+    List<LearningScenario> catalogue, ProgressState progress,
+    {bool cooperative = false, bool includePractice = false}) {
   if (catalogue.isEmpty) return null;
+  final guided = cooperative || includePractice;
+  final route = guided ? cooperativePracticeRoute : recommendedPracticeRoute;
   final families = {
     for (final kind in GameKind.values) kind: <LearningScenario>[],
   };
@@ -43,14 +62,15 @@ LearningScenario? recommendScenario(
   };
   for (final scenario in catalogue) {
     families[scenario.kind]!.add(scenario);
-    (progress.entry(scenario.id).independent
+    final entry = progress.entry(scenario.id);
+    (entry.independent || (cooperative || includePractice) && entry.construction
             ? completed[scenario.kind]!
             : remaining[scenario.kind]!)
         .add(scenario);
   }
 
   var introductionSize = 0;
-  for (final stage in recommendedPracticeRoute) {
+  for (final stage in route) {
     final available = families[stage.kind]!.length;
     final goal = available < stage.independentRounds
         ? available
@@ -58,24 +78,22 @@ LearningScenario? recommendScenario(
     introductionSize += goal;
     if (completed[stage.kind]!.length < goal) {
       return _choose(remaining[stage.kind]!, completed[stage.kind]!,
-          introductory: true);
+          introductory: true, guided: guided);
     }
   }
 
   // Count only this catalogue: progress from a discovery lab cannot shift it.
   final solved =
       completed.values.fold<int>(0, (sum, family) => sum + family.length);
-  final cycle = (solved - introductionSize) % recommendedPracticeRoute.length;
-  for (var offset = 0; offset < recommendedPracticeRoute.length; offset++) {
-    final kind = recommendedPracticeRoute[
-            (cycle + offset) % recommendedPracticeRoute.length]
-        .kind;
+  final cycle = (solved - introductionSize) % route.length;
+  for (var offset = 0; offset < route.length; offset++) {
+    final kind = route[(cycle + offset) % route.length].kind;
     if (remaining[kind]!.isNotEmpty) {
       return _choose(remaining[kind]!, completed[kind]!, introductory: false);
     }
   }
 
-  for (final stage in recommendedPracticeRoute) {
+  for (final stage in route) {
     if (families[stage.kind]!.isNotEmpty) {
       return _choose(families[stage.kind]!, const [], introductory: true);
     }
@@ -85,10 +103,52 @@ LearningScenario? recommendScenario(
 
 LearningScenario _choose(
     List<LearningScenario> remaining, List<LearningScenario> completed,
-    {required bool introductory}) {
+    {required bool introductory, bool guided = false}) {
   final candidates = introductory
       ? _introductoryCandidates(remaining, completed.length)
       : remaining;
+  if (introductory && guided) {
+    final sequences = <GameKind, List<Map<String, int>>>{
+      GameKind.numberLine: [
+        {'start': 3, 'delta': 2},
+        {'start': 3, 'delta': 3},
+        {'start': 4, 'delta': 3},
+      ],
+      GameKind.equalGroups: [
+        {'groups': 2, 'each': 2},
+        {'groups': 2, 'each': 3},
+        {'groups': 3, 'each': 3},
+      ],
+      GameKind.sharing: [
+        {'total': 9, 'people': 3},
+        {'total': 12, 'people': 3},
+        {'total': 12, 'people': 4},
+      ],
+      GameKind.fractionTiles: [
+        {'parts': 4, 'selected': 1},
+        {'parts': 4, 'selected': 2},
+        {'parts': 6, 'selected': 2},
+      ],
+    };
+    final sequence = sequences[remaining.first.kind];
+    if (sequence != null) {
+      for (final parameters in sequence) {
+        for (final scenario in remaining) {
+          if (parameters.entries
+              .every((e) => scenario.values[e.key] == e.value)) return scenario;
+        }
+      }
+    }
+  }
+  if (introductory &&
+      completed.isEmpty &&
+      remaining.first.kind == GameKind.numberLine) {
+    for (final scenario in candidates) {
+      if (scenario.values['start'] == 3 && scenario.values['delta'] == 2) {
+        return scenario;
+      }
+    }
+  }
   final easiestLevel = candidates
       .map((scenario) => scenario.level)
       .reduce((left, right) => left < right ? left : right);

@@ -24,6 +24,8 @@ Future<void> start(WidgetTester tester, ProgressStore store) async {
   await tester.pumpAndSettle();
   await tester.tap(find.byKey(const ValueKey('recommended-start')));
   await tester.pumpAndSettle();
+  await tester.pump(const Duration(seconds: 2));
+  await tester.pumpAndSettle();
 }
 
 Future<void> construct(WidgetTester tester) async {
@@ -112,6 +114,23 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.byKey(const ValueKey('definition-card')), findsOneWidget);
     expect(find.byKey(const ValueKey('transfer-input')), findsNothing);
+  });
+
+  testWidgets('rapid continue taps cannot skip meaning after an immediate save',
+      (tester) async {
+    final backend = MemoryProgressBackend();
+    await start(tester, ProgressStore(backend: backend));
+    await tester.ensureVisible(find.byKey(const ValueKey('line-right')));
+    await tester.tap(find.byKey(const ValueKey('line-right')));
+    await tester.tap(find.byKey(const ValueKey('line-right')));
+    await tester.pumpAndSettle();
+    final button = find.byKey(const ValueKey('lesson-continue'));
+    await tester.tap(button);
+    await tester.tap(button);
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('definition-card')), findsOneWidget);
+    expect(find.byKey(const ValueKey('transfer-input')), findsNothing);
+    expect(ProgressState.decode(backend.value!).entry(lesson.id).attempts, 0);
   });
 }
 

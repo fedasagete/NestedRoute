@@ -24,6 +24,8 @@ void main() {
     expect(find.byKey(const ValueKey('recommended-start')), findsOneWidget);
     await tester.tap(find.byKey(const ValueKey('recommended-start')));
     await tester.pumpAndSettle();
+    await tester.pump(const Duration(seconds: 2));
+    await tester.pumpAndSettle();
     expect(find.byKey(const ValueKey('line-right')), findsOneWidget);
     expect(find.byKey(const ValueKey('definition-card')), findsNothing);
     expect(tester.takeException(), isNull);

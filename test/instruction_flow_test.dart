@@ -14,10 +14,16 @@ Future<void> openHome(WidgetTester tester) async {
 }
 
 void main() {
-  testWidgets('visible step instructions do not solve the construction',
+  testWidgets(
+      'optional instructions preserve the learner board and do not solve it',
       (tester) async {
     await openHome(tester);
     await tester.tap(find.byKey(const ValueKey('recommended-start')));
+    await tester.pumpAndSettle();
+    await tester.pump(const Duration(seconds: 2));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('lesson-guide')), findsNothing);
+    await tester.tap(find.byTooltip('Tartiiba'));
     await tester.pumpAndSettle();
     expect(find.byKey(const ValueKey('lesson-guide')), findsOneWidget);
     expect(find.byKey(const ValueKey('guide-step-0')), findsOneWidget);
@@ -30,16 +36,10 @@ void main() {
             .widget<FilledButton>(find.byKey(const ValueKey('lesson-continue')))
             .onPressed,
         isNull);
-    await tester.ensureVisible(find.byKey(const ValueKey('guide-play')));
-    await tester.tap(find.byKey(const ValueKey('guide-play')));
+    await tester.tap(find.byKey(const ValueKey('instructions-close')));
     await tester.pumpAndSettle();
-    expect(tester.getCenter(find.byKey(const ValueKey('line-right'))).dy,
-        lessThan(764));
-    await tester.tap(find.byTooltip('Tartiiba'));
-    await tester.pumpAndSettle();
-    expect(tester.getCenter(find.byKey(const ValueKey('guide-step-1'))).dy,
-        lessThan(764));
-    await tester.tap(find.byKey(const ValueKey('guide-play')));
+    await tester.ensureVisible(find.byKey(const ValueKey('line-right')));
+    await tester.tap(find.byKey(const ValueKey('line-right')));
     await tester.pumpAndSettle();
     await tester.tap(find.byKey(const ValueKey('line-right')));
     await tester.pumpAndSettle();
