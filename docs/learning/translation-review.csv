@@ -1,0 +1,1279 @@
+id,source_english,proposed_afaan_oromo,review_status,usage,review_note
+ui.start,Start,,unreviewed,UI/audio,
+ui.continue,Continue,,unreviewed,UI/audio,
+ui.back,Back,,unreviewed,UI/audio,
+ui.replay,Replay the action,,unreviewed,UI/audio,
+ui.listen,Listen,,unreviewed,UI/audio,
+ui.pause,Pause,,unreviewed,UI/audio,
+ui.select,Select an item,,unreviewed,UI/audio,
+ui.place,Place the selected item,,unreviewed,UI/audio,
+ui.undo,Undo the last action,,unreviewed,UI/audio,
+ui.reset,Start this activity again,,unreviewed,UI/audio,
+ui.predict,Predict what will happen,,unreviewed,UI/audio,
+ui.explain,Explain what changed,,unreviewed,UI/audio,
+ui.check,Check your answer,,unreviewed,UI/audio,
+ui.check_units,Check the units,,unreviewed,UI/audio,
+ui.try_again,Try another method,,unreviewed,UI/audio,
+ui.show_step,Show one step,,unreviewed,UI/audio,
+ui.next_goal,Choose the next goal,,unreviewed,UI/audio,
+ui.build,Build the requested result,,unreviewed,UI/audio,
+ui.repair,Find and repair the first wrong step,,unreviewed,UI/audio,
+ui.transfer,Solve this without moving the objects,,unreviewed,UI/audio,
+ui.saved,Your progress is saved on this device,,unreviewed,UI/audio,
+ui.whole,This is one whole,,unreviewed,UI/audio,
+ui.zero_pair,This pair has total zero,,unreviewed,UI/audio,
+ui.equal_parts,The parts must have equal size,,unreviewed,UI/audio,
+ui.same_both_sides,Apply the same operation to both sides,,unreviewed,UI/audio,
+ui.boundary,Does the boundary value satisfy the original statement?,,unreviewed,UI/audio,
+ui.reason,Explain why this step is valid,,unreviewed,UI/audio,
+ui.no_timer,Take the time you need,,unreviewed,UI/audio,
+ui.audio_off,Audio is off,,unreviewed,UI/audio,
+glossary.mathematics,mathematics,Herrega,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.chapter,chapter,Boqonnaa,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.activity,activity,Gocha,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.definition,definition,Hiikoo,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.example,example,Fakkeenya,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.solution,solution,Furmaata,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.exercise,exercise,Gilgaala,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.set,set,Tuuta,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.member,member,Miseensa,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.subset,subset,Cita tuutaa,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.counting_numbers,counting numbers,Lakkoofsota lakkaawwii,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.whole_numbers,whole numbers,Lakkoofsota hundaa,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.integers,integers,Intiijaroota,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.addition,addition,Ida’uu,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.subtraction,subtraction,Hir’isuu,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.multiplication,multiplication,Baay’isuu,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.division,division,Hiruu,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.fraction,fraction,Firaakshinii,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.numerator,numerator,Waamamaa,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.denominator,denominator,Waamsisaa,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.ratio,ratio,Reeshoo,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.proportion,proportion,Piropporshinii,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.percentage,percentage,Dhibbarraa,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.variable,variable,Jijjiiramaa,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.equation,equation,Hima walqixaa,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.inequality,inequality,Hima walcaalmaa,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.number_line,number line,Sarara lakkoofsaa,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.absolute_value,absolute value,Gat-sirrii,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.perimeter,perimeter,Naannawa,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.area,area,Bal’ina,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.volume,volume,Qabee,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.triangle,triangle,Rogsadee,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.quadrilateral,quadrilateral,Rogafree,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.circle,circle,Geengoo,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.angle,angle,Kofa,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.congruence,congruence,Walittigalummaa,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.similarity,similarity,Walfakkaatina,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.mean,mean,Gatii giddu galaa,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.median,median,Gatii gidduu,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.mode,mode,Gatii marmaartuu,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+glossary.probability,probability,Carraa ta’uumsaa,unreviewed,UI/audio,Term observed in supplied source books; not yet reviewed learner wording. Percentage amount/rate and number-set terms need context checks.
+f01.goal,"Pack a counted harvest into hundreds, tens and single units without changing its amount.",,unreviewed,UI/audio,
+f01.action.1,Count single units into groups of ten.,,unreviewed,UI/audio,
+f01.action.2,Trade ten tens for one hundred.,,unreviewed,UI/audio,
+f01.action.3,"Place bundles in labelled value columns, including an empty column.",,unreviewed,UI/audio,
+f01.action.4,Read and rebuild the numeral from its columns.,,unreviewed,UI/audio,
+f01.consequence.1,The object count stays constant while the number of bundles changes; an empty tens column becomes a written zero.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f01.debrief.1,A digit records how many units of its position there are.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f01.debrief.2,"In 407, the 4 means 400, the 0 means no tens, and the 7 means seven ones.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f01.misconception.1,407 is the same as 47 because zero means nothing.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f01.repair.1,Compare four hundred-bundles with four ten-bundles; rebuild both numbers before reading them.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f01.transfer.question.1,What is the value of 6 in 602?,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f01.transfer.question.2,Explain the zero.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f01.transfer.answer.1,"6 is six hundreds, or 600.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f01.transfer.answer.2,"There are no tens and two ones, so 602 = 600 + 0 + 2.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f02.goal,Combine two deliveries and record their exact total.,,unreviewed,UI/audio,
+f02.action.1,Build each delivery in tens and ones.,,unreviewed,UI/audio,
+f02.action.2,Merge the ones and count them.,,unreviewed,UI/audio,
+f02.action.3,Trade each group of ten ones into a ten.,,unreviewed,UI/audio,
+f02.action.4,Merge the tens and record each column.,,unreviewed,UI/audio,
+f02.consequence.1,A carry appears only when ten same-size units are exchanged; no objects appear or vanish.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f02.debrief.1,Addition combines quantities.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f02.debrief.2,"Regrouping changes their representation, not their value: ten ones equal one ten.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f02.misconception.1,Write a two-digit ones total in the ones column.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f02.repair.1,"Trade ten ones physically, then record the remaining ones and the new ten.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f02.transfer.question.1,Find 48 + 37 and explain the carried 1.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f02.transfer.answer.1,8 + 7 = 15 ones: exchange ten for a ten and leave five ones. 4 + 3 + 1 = 8 tens; total 85.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f03.goal,Remove the requested supplies from stock and report what remains.,,unreviewed,UI/audio,
+f03.action.1,Build the stock using tens and ones.,,unreviewed,UI/audio,
+f03.action.2,Notice when the requested ones exceed the loose ones.,,unreviewed,UI/audio,
+f03.action.3,Exchange one ten into ten ones.,,unreviewed,UI/audio,
+f03.action.4,"Remove the requested tens and ones, then count the remainder.",,unreviewed,UI/audio,
+f03.consequence.1,One tens bundle opens; the stock value stays fixed until units are removed.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f03.debrief.1,Subtraction finds what remains or the difference.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f03.debrief.2,Exchanging a ten provides smaller units of the same value.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f03.misconception.1,Always subtract the smaller digit from the larger digit.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f03.repair.1,The digit positions belong to quantities.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f03.repair.2,Rebuild 52 and remove 28; the operation cannot be changed to 8−2.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f03.transfer.question.1,Find 63 − 28 and verify by addition.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f03.transfer.answer.1,63 becomes five tens and thirteen ones.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f03.transfer.answer.2,"Remove two tens and eight ones: three tens and five ones, or 35.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f03.transfer.answer.3,Check 35 + 28 = 63.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f04.goal,Arrange equal rows of seedlings and count them without counting one at a time.,,unreviewed,UI/audio,
+f04.action.1,Build the requested number of equal rows.,,unreviewed,UI/audio,
+f04.action.2,Count columns and label row count × column count.,,unreviewed,UI/audio,
+f04.action.3,Split the array at a convenient column.,,unreviewed,UI/audio,
+f04.action.4,Count each smaller rectangle and combine their totals.,,unreviewed,UI/audio,
+f04.consequence.1,Two smaller rectangles exactly cover the original array with no overlap or gaps.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f04.debrief.1,Multiplication counts equal groups.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f04.debrief.2,Splitting columns gives a(b+c)=ab+ac; rotating an array shows ab=ba.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f04.misconception.1,3 × 5 means 3 + 5.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f04.repair.1,Build three rows of five and compare their 15 cells with a line of eight cells.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f04.transfer.question.1,Use a split to find 6 × 14.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f04.transfer.answer.1,Split 14 into 10 + 4: 6×10 + 6×4 = 60 + 24 = 84.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f05.goal,Decide both how much each person receives and how many equal packs can be made.,,unreviewed,UI/audio,
+f05.action.1,Share all items equally among a stated number of people.,,unreviewed,UI/audio,
+f05.action.2,Count each share and rebuild the total using multiplication.,,unreviewed,UI/audio,
+f05.action.3,Reset the items and make packs of the stated size.,,unreviewed,UI/audio,
+f05.action.4,Count packs and explain what the quotient counts in each layout.,,unreviewed,UI/audio,
+f05.consequence.1,The same division facts can count items per person or number of packs; the labels change.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f05.debrief.1,Division finds a missing factor.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f05.debrief.2,Sharing fixes the number of groups; grouping fixes the size of each group.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f05.debrief.3,Total = number of groups × size.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f05.misconception.1,Every division answer counts people.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f05.repair.1,Label each quotient with its unit and compare the two layouts.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f05.transfer.question.1,There are 24 pencils.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f05.transfer.question.2,Share among 6 pupils; then pack 6 pencils per pack.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f05.transfer.answer.1,Sharing gives 24÷6 = 4 pencils per pupil.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f05.transfer.answer.2,Grouping gives 24÷6 = 4 packs.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f05.transfer.answer.3,"Both verify as 6×4 = 24, with different units.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f06.goal,Give a stated fraction of one loaf while keeping shares equal.,,unreviewed,UI/audio,
+f06.action.1,Choose the complete loaf as one whole.,,unreviewed,UI/audio,
+f06.action.2,Divide it into equal-size parts.,,unreviewed,UI/audio,
+f06.action.3,Select the requested number of parts.,,unreviewed,UI/audio,
+f06.action.4,Compare with an unevenly cut candidate and reject unequal parts.,,unreviewed,UI/audio,
+f06.consequence.1,Only equal partitions support counting selected parts as numerator over denominator; changing the whole changes the quantity.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f06.debrief.1,"a/b means a parts when one whole is divided into b equal parts, with b nonzero.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f06.debrief.2,The denominator counts equal parts of that same whole.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f06.misconception.1,Any three pieces are three quarters.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f06.repair.1,Overlay the pieces on a whole partitioned into four equal parts; unequal pieces cannot be counted as quarters.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f06.transfer.question.1,A ribbon is cut into 8 equal pieces.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f06.transfer.question.2,What fraction is 3 pieces?,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f06.transfer.answer.1,Three selected equal pieces out of eight form 3/8 of the original ribbon.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f07.goal,Describe the same selected length using finer equal parts.,,unreviewed,UI/audio,
+f07.action.1,Shade a/b of a fixed strip.,,unreviewed,UI/audio,
+f07.action.2,Split every part into k equal smaller parts.,,unreviewed,UI/audio,
+f07.action.3,Count shaded parts and all parts.,,unreviewed,UI/audio,
+f07.action.4,"Overlay the old and new shading, then write a/b = ak/bk.",,unreviewed,UI/audio,
+f07.consequence.1,The shaded length stays unchanged as numerator and denominator both scale.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f07.debrief.1,Equivalent fractions name the same number.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f07.debrief.2,Multiplying numerator and denominator by the same nonzero factor preserves the value.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f07.misconception.1,Adding the same number to numerator and denominator preserves the fraction.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f07.repair.1,Compare 1/2 with 2/3 using the same whole; their shaded lengths differ.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f07.transfer.question.1,Show why 2/3 = 8/12.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f07.transfer.answer.1,Split each third into four parts.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f07.transfer.answer.2,"Two selected thirds become eight twelfths, so 2/3 = (2×4)/(3×4) = 8/12.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f08.goal,Pay an exact amount by trading whole birr into hundredths.,,unreviewed,UI/audio,
+f08.action.1,Set one birr as one whole and one cent as 1/100.,,unreviewed,UI/audio,
+f08.action.2,"Build an amount with whole, tenth and hundredth tokens.",,unreviewed,UI/audio,
+f08.action.3,Exchange one whole into ten tenths or one tenth into ten hundredths.,,unreviewed,UI/audio,
+f08.action.4,Write the amount as a decimal and a fraction.,,unreviewed,UI/audio,
+f08.consequence.1,0.5 birr and 0.50 birr occupy the same amount; 0.05 is visibly smaller.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f08.debrief.1,Decimal positions are powers of ten. 3.25 = 3 + 2/10 + 5/100 = 325/100.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f08.misconception.1,0.5 is smaller than 0.25 because 5 is smaller than 25.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f08.repair.1,Express both in hundredths: 50/100 is greater than 25/100.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f08.transfer.question.1,Write 4 birr and 7 cents as a decimal.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f08.transfer.answer.1,"7 cents is 7/100 birr, so the amount is 4.07 birr; 4.70 would mean 70 cents.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f09.goal,Measure the same object using consistent units before comparing it.,,unreviewed,UI/audio,
+f09.action.1,Trade one metre length for 100 centimetre lengths.,,unreviewed,UI/audio,
+f09.action.2,Tile one square metre with rows and columns of square centimetres.,,unreviewed,UI/audio,
+f09.action.3,Stack cubic-centimetre layers to form one cubic metre.,,unreviewed,UI/audio,
+f09.action.4,"Label length, area and volume with cm, cm² and cm³ respectively.",,unreviewed,UI/audio,
+f09.consequence.1,A length scale of 100 produces 100² tiles for area and 100³ cubes for volume.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f09.debrief.1,"Units describe what is measured. 1 m = 100 cm, 1 m² = 10,000 cm², and 1 m³ = 1,000,000 cm³.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f09.misconception.1,Multiply every metre-based measure by 100 to convert to centimetres.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f09.repair.1,Count the two directions of area or three directions of volume separately.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f09.transfer.question.1,Convert 2 m² to cm².,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f09.transfer.answer.1,Each square metre has 100×100 square centimetres.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f09.transfer.answer.2,"Therefore 2 m² = 20,000 cm².",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f10.goal,Calculate a packing order that contains groups within groups.,,unreviewed,UI/audio,
+f10.action.1,Build three boxes containing a fixed group plus loose items.,,unreviewed,UI/audio,
+f10.action.2,Write one expression for the physical grouping.,,unreviewed,UI/audio,
+f10.action.3,Evaluate the inner groups before the outer operation.,,unreviewed,UI/audio,
+f10.action.4,Build a different ungrouped expression and compare its result.,,unreviewed,UI/audio,
+f10.consequence.1,Parentheses alter which objects are grouped; an operation tree shows the sequence.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f10.debrief.1,Parentheses specify grouping.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f10.debrief.2,Multiplication/division are evaluated before addition/subtraction unless grouping changes the order; equal-priority operations go left to right.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f10.misconception.1,All expressions are calculated strictly from left to right.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f10.repair.1,Compare 3+4×2 with (3+4)×2 using the object groups.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f10.transfer.question.1,Find 18 − 3×4 and (18 − 3)×4.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f10.transfer.answer.1,18−3×4 = 18−12 = 6.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f10.transfer.answer.2,(18−3)×4 = 15×4 = 60.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+f10.transfer.answer.3,Their groupings differ.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7s01.goal,Send each number card through a clear membership gate.,,unreviewed,UI/audio,
+g7s01.action.1,"Choose a rule whose answer is decidable, such as even numbers below 10.",,unreviewed,UI/audio,
+g7s01.action.2,Test each card against the whole rule.,,unreviewed,UI/audio,
+g7s01.action.3,Place accepted cards in the set and rejected cards outside.,,unreviewed,UI/audio,
+g7s01.action.4,Write one membership and one non-membership statement.,,unreviewed,UI/audio,
+g7s01.consequence.1,A card is accepted only if it satisfies the stated property; a vague rule cannot decide every card.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7s01.debrief.1,A set is a well-defined collection. x∈A means x belongs to A; x∉A means it does not.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7s01.misconception.1,A set can be the nicest numbers.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7s01.repair.1,Ask how two people could always agree; replace subjective nicest with a testable property.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7s01.transfer.question.1,"For A={2,4,6,8}, decide whether 6 and 7 belong.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7s01.transfer.answer.1,"6∈A and 7∉A, because only 6 is listed.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7s02.goal,Find every card in a smaller collection and show it also passes the larger rule.,,unreviewed,UI/audio,
+g7s02.action.1,Build the finite displayed universe.,,unreviewed,UI/audio,
+g7s02.action.2,Place a set satisfying an extra restriction inside its parent set.,,unreviewed,UI/audio,
+g7s02.action.3,Check every smaller-set member against the parent rule.,,unreviewed,UI/audio,
+g7s02.action.4,Compare with an empty restriction and an unbounded continuing number rule.,,unreviewed,UI/audio,
+g7s02.consequence.1,No member escapes the parent container; empty and unbounded rules differ from a merely empty screen.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7s02.debrief.1,A⊆B means every member of A belongs to B.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7s02.debrief.2,An empty set has no members; finite means finitely many members; an infinite rule has no final member.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7s02.misconception.1,A set is infinite whenever its members are not currently all visible.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7s02.repair.1,"Distinguish a hidden finite list from positive even numbers, which always have a next member.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7s02.transfer.question.1,"Are {2,4} and ∅ subsets of {2,4,6}?",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7s02.transfer.answer.1,Both are subsets.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7s02.transfer.answer.2,"Every member of {2,4} is in the larger set, and ∅ has no member that could fail the condition.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7s03.goal,Decide whether two collections contain the same members or only the same number.,,unreviewed,UI/audio,
+g7s03.action.1,Pair each member of A with one member of B to compare counts.,,unreviewed,UI/audio,
+g7s03.action.2,Check identity of members rather than only the pairing count.,,unreviewed,UI/audio,
+g7s03.action.3,Reorder one collection and remove duplicates from its set display.,,unreviewed,UI/audio,
+g7s03.action.4,"State equal sets, equal cardinality only, or neither.",,unreviewed,UI/audio,
+g7s03.consequence.1,"A full pairing proves equal cardinality; identity matching proves equality, independent of order.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7s03.debrief.1,Equal sets have exactly the same members.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7s03.debrief.2,Equinumerous finite sets have the same number of members and may contain different objects.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7s03.misconception.1,Same number of members means equal sets.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7s03.repair.1,"Pair {1,2,3} with {a,b,c}, then show that 1 is absent from the second set.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7s03.transfer.question.1,"Compare {1,3,3,5} and {5,1,3}.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7s03.transfer.answer.1,"They are equal sets: both have members 1,3,5.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7s03.transfer.answer.2,Repetition and order do not change membership.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7s04.goal,Place every eligible card in a Venn region and collect either group or only shared members.,,unreviewed,UI/audio,
+g7s04.action.1,Test each card against both set rules.,,unreviewed,UI/audio,
+g7s04.action.2,"Place it in A only, B only, overlap, or outside.",,unreviewed,UI/audio,
+g7s04.action.3,Collect union using either membership; count overlap once.,,unreviewed,UI/audio,
+g7s04.action.4,Collect intersection using both memberships and check a disjoint comparison.,,unreviewed,UI/audio,
+g7s04.consequence.1,The overlap belongs to both sets but contributes once to their union; an empty overlap signals disjointness.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7s04.debrief.1,A∪B contains members in A or B or both.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7s04.debrief.2,A∩B contains members in both.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7s04.debrief.3,Disjoint sets have empty intersection.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7s04.misconception.1,The union count is always n(A)+n(B).,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7s04.repair.1,Route the shared cards once and use n(A∪B)=n(A)+n(B)−n(A∩B).,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7s04.transfer.question.1,"A={1,2,3}, B={3,4}.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7s04.transfer.question.2,Find union and intersection.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7s04.transfer.answer.1,"A∪B={1,2,3,4}; A∩B={3}.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7s04.transfer.answer.2,The union count is 3+2−1=4.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i01.goal,Mark positions above and below a common zero and find the higher position.,,unreviewed,UI/audio,
+g7i01.action.1,Set zero as the reference level.,,unreviewed,UI/audio,
+g7i01.action.2,Place positive and negative measurements on equally spaced ticks.,,unreviewed,UI/audio,
+g7i01.action.3,Reflect a position across zero to find its opposite.,,unreviewed,UI/audio,
+g7i01.action.4,Order positions from left to right and compare distance from zero.,,unreviewed,UI/audio,
+g7i01.consequence.1,−7 is farther from zero than −2 but lies to its left; position and distance answer different questions.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i01.debrief.1,Integers extend whole numbers with negatives.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i01.debrief.2,Opposites sum to zero.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i01.debrief.3,Greater integers lie farther right on the number line.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i01.misconception.1,−7 is greater than −2 because 7>2.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i01.repair.1,Move from −7 toward −2 and observe movement to the right; compare positions before magnitudes.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i01.transfer.question.1,"Order −6,2,−1,0.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i01.transfer.question.2,What is the opposite of −6?,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i01.transfer.answer.1,−6<−1<0<2.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i01.transfer.answer.2,"The opposite of −6 is 6, because −6+6=0.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i02.goal,Combine gains and debts to find the net change.,,unreviewed,UI/audio,
+g7i02.action.1,Build positive and negative counters with equal unit value.,,unreviewed,UI/audio,
+g7i02.action.2,Combine the two collections.,,unreviewed,UI/audio,
+g7i02.action.3,Pair one positive and one negative into zero.,,unreviewed,UI/audio,
+g7i02.action.4,Count the unpaired counters and write the signed sum.,,unreviewed,UI/audio,
+g7i02.consequence.1,Cancelled pairs contribute zero; the remaining sign depends on which side has more units.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i02.debrief.1,Adding opposite equal quantities gives zero.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i02.debrief.2,Addition of unlike signs leaves their magnitude difference with the sign of the larger magnitude.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i02.misconception.1,A negative sign means always subtract the smaller printed digit.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i02.repair.1,Preserve counter signs and compare magnitudes before counting the leftovers.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i02.transfer.question.1,Find −8+5 and 8+(−5).,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i02.transfer.answer.1,Eight negative and five positive counters leave three negative: −3.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i02.transfer.answer.2,Reversing signs leaves three positive: 3.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i03.goal,Remove a stated debt or gain while preserving the initial balance.,,unreviewed,UI/audio,
+g7i03.action.1,Represent the starting balance with counters.,,unreviewed,UI/audio,
+g7i03.action.2,Identify which signed counters must be removed.,,unreviewed,UI/audio,
+g7i03.action.3,Insert zero pairs if those counters are missing.,,unreviewed,UI/audio,
+g7i03.action.4,Remove exactly the requested counters and count the final balance.,,unreviewed,UI/audio,
+g7i03.consequence.1,Removing negative counters leaves extra positive counters; inserting zero pairs does not change the starting balance.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i03.debrief.1,Subtracting b is adding its opposite: a−b=a+(−b).,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i03.debrief.2,Removing a debt increases a balance.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i03.misconception.1,Subtracting always makes a number smaller.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i03.repair.1,"Begin with 2, add three zero pairs, remove three negative counters and inspect the resulting 5.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i03.transfer.question.1,Find −2−(−5).,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i03.transfer.answer.1,"Insert three zero pairs into two negative counters, giving five negative and three positive counters.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i03.transfer.answer.2,"Remove five negative counters: three positives remain, so the result is 3.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i04.goal,Extend a multiplication machine below zero while keeping equal steps and distribution consistent.,,unreviewed,UI/audio,
+g7i04.action.1,"Build 3×(−4), 2×(−4), 1×(−4) and 0×(−4) as repeated groups.",,unreviewed,UI/audio,
+g7i04.action.2,"Decrease the first factor by one each time; remove one −4 group, so the output increases by 4.",,unreviewed,UI/audio,
+g7i04.action.3,"Continue to −1×(−4), −2×(−4) and inspect the positive outputs.",,unreviewed,UI/audio,
+g7i04.action.4,Check that (2+(−2))×(−4)=0 using distribution; the two products must cancel.,,unreviewed,UI/audio,
+g7i04.consequence.1,"Outputs −12,−8,−4,0,4,8 form equal +4 steps; the new product must be +8 to cancel 2×(−4)=−8.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i04.debrief.1,Integer multiplication extends equal-step scaling and the distributive law.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i04.debrief.2,"Since a+(−a)=0, a(−b)+(−a)(−b)=0, so (−a)(−b)=ab.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i04.debrief.3,This is the reason behind the sign rule.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i04.misconception.1,Two negative signs are crossed out because that is the rule.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i04.repair.1,Ask what output would preserve zero and distribution; reject a negative output that fails the cancellation check.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i04.transfer.question.1,Explain (−3)×(−5) without quoting the sign rule.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i04.transfer.answer.1,3×(−5)=−15.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i04.transfer.answer.2,"Since (3+(−3))×(−5)=0, distribution gives −15+(−3)(−5)=0.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i04.transfer.answer.3,The missing product must be +15.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i05.goal,Find the missing signed multiplier that recreates the total.,,unreviewed,UI/audio,
+g7i05.action.1,Write divisor × unknown = dividend.,,unreviewed,UI/audio,
+g7i05.action.2,Test a signed candidate using multiplication.,,unreviewed,UI/audio,
+g7i05.action.3,Adjust sign and magnitude until the product matches.,,unreviewed,UI/audio,
+g7i05.action.4,Try divisor zero and explain why a nonzero dividend cannot be reached.,,unreviewed,UI/audio,
+g7i05.consequence.1,The quotient works only when multiplication returns the dividend; a zero divisor cannot give a unique inverse.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i05.debrief.1,"a÷b=q means bq=a, with b≠0. 0÷b=0 for nonzero b.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i05.debrief.2,"Division by zero is undefined: for a≠0 there is no solution, and 0q=0 has no unique q.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i05.misconception.1,a÷0 is zero.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i05.repair.1,Test 0×0 against a nonzero a; the product cannot recreate the dividend.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i05.transfer.question.1,Find −24÷(−6).,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i05.transfer.question.2,Why is 24÷0 undefined?,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i05.transfer.answer.1,"(−6)×4=−24, so the quotient is 4.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i05.transfer.answer.2,"No number q gives 0×q=24, so 24÷0 is undefined.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i06.goal,Predict whether a signed count can be grouped into pairs.,,unreviewed,UI/audio,
+g7i06.action.1,Pair the magnitude into twos and observe a leftover.,,unreviewed,UI/audio,
+g7i06.action.2,Place positive and negative cases on every-other integer ticks.,,unreviewed,UI/audio,
+g7i06.action.3,Combine two parity patterns and test the sum.,,unreviewed,UI/audio,
+g7i06.action.4,Write a general even or odd form using an integer k.,,unreviewed,UI/audio,
+g7i06.consequence.1,Zero and negative even integers fit 2k; adding two odd integers creates an extra pair.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i06.debrief.1,Even integers are 2k and odd integers are 2k+1 for some integer k.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i06.debrief.2,"Parity concerns divisibility by 2, including negative integers.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i06.misconception.1,Only positive whole numbers can be even.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i06.repair.1,"Use k=−3 to form −6=2(−3), and verify the signed division.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i06.transfer.question.1,Is −7 odd?,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i06.transfer.question.2,What is odd + odd?,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i06.transfer.answer.1,"−7=2(−4)+1, so it is odd.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7i06.transfer.answer.2,"(2a+1)+(2b+1)=2(a+b+1), so odd+odd is even.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r01.goal,Make a mix with two quantities kept in a fixed ratio.,,unreviewed,UI/audio,
+g7r01.action.1,Build one batch using two scoops of A and three of B.,,unreviewed,UI/audio,
+g7r01.action.2,Copy the entire batch rather than only one quantity.,,unreviewed,UI/audio,
+g7r01.action.3,Count each ingredient in several batches.,,unreviewed,UI/audio,
+g7r01.action.4,Simplify the count pair and distinguish part-to-part from part-to-whole.,,unreviewed,UI/audio,
+g7r01.consequence.1,"Every complete batch preserves A:B=2:3; A is 2/5 of the whole, not 2/3.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r01.debrief.1,A ratio compares quantities in a stated order.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r01.debrief.2,Equivalent ratios multiply or divide both terms by the same positive factor.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r01.misconception.1,A:B=2:3 means A is 2/3 of the total.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r01.repair.1,Join all five units in one batch and count the A part out of five.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r01.transfer.question.1,A mix has A:B=3:5.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r01.transfer.question.2,What fraction is A of the mix?,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r01.transfer.answer.1,The total is 3+5=8 equal units.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r01.transfer.answer.2,A is 3/8 of the mix; A:B remains 3:5.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r02.goal,Find the cost of a different quantity under an explicitly constant rate.,,unreviewed,UI/audio,
+g7r02.action.1,Convert quantities into one unit.,,unreviewed,UI/audio,
+g7r02.action.2,Divide a known total by its quantity to find one-unit cost.,,unreviewed,UI/audio,
+g7r02.action.3,Scale from one unit to the desired quantity.,,unreviewed,UI/audio,
+g7r02.action.4,Check both columns preserve the same cost/quantity ratio.,,unreviewed,UI/audio,
+g7r02.consequence.1,The table scales multiplicatively; adding the same amount to each column breaks the constant rate.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r02.debrief.1,A proportion states equality of ratios.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r02.debrief.2,Directly proportional quantities have a constant ratio y/x for nonzero x.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r02.misconception.1,"If quantity rises by 2, price rises by 2.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r02.repair.1,Calculate the unit rate and compare the incorrect new ratio with the original.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r02.transfer.question.1,4 kg costs 120 birr.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r02.transfer.question.2,"At the same rate, what does 7 kg cost?",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r02.transfer.answer.1,One kg costs 120÷4=30 birr; 7 kg costs 7×30=210 birr. 120/4=210/7=30.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r03.goal,Allocate a specified percent of a quantity and distinguish rate from amount.,,unreviewed,UI/audio,
+g7r03.action.1,Shade p squares in a hundred-grid.,,unreviewed,UI/audio,
+g7r03.action.2,Write p/100 and its decimal equivalent.,,unreviewed,UI/audio,
+g7r03.action.3,Scale the whole grid from 100 units to the specified whole.,,unreviewed,UI/audio,
+g7r03.action.4,Count the selected amount and the remainder.,,unreviewed,UI/audio,
+g7r03.consequence.1,The same shaded rate produces different amounts when the whole changes.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r03.debrief.1,p% means p/100.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r03.debrief.2,Percentage amount = (p/100)×whole; the rate alone does not specify an amount.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r03.misconception.1,20% always means 20 units.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r03.repair.1,Compare 20 shaded hundredths of wholes 50 and 200; the amounts are 10 and 40.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r03.transfer.question.1,Find 15% of 240.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r03.transfer.answer.1,15/100×240=36.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r03.transfer.answer.2,The rate is 15%; the amount is 36 units.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r04.goal,Set a selling price and report profit or loss relative to buying price.,,unreviewed,UI/audio,
+g7r04.action.1,Record buying and selling prices in separate columns.,,unreviewed,UI/audio,
+g7r04.action.2,Subtract buying price from selling price.,,unreviewed,UI/audio,
+g7r04.action.3,Mark positive profit or negative loss.,,unreviewed,UI/audio,
+g7r04.action.4,Compare the magnitude with buying price and convert to percent.,,unreviewed,UI/audio,
+g7r04.consequence.1,"The rate uses buying price as its base, even when the displayed selling price is larger.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r04.debrief.1,Profit = selling−buying and loss = buying−selling when positive.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r04.debrief.2,Profit/loss percent = amount/buying price×100%.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r04.misconception.1,Divide profit by selling price.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r04.repair.1,Place the original investment as the whole; compare both candidate denominators with that whole.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r04.transfer.question.1,Buy for 400 birr and sell for 460 birr.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r04.transfer.question.2,Find profit percent.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r04.transfer.answer.1,Profit=460−400=60 birr.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r04.transfer.answer.2,Profit rate=60/400×100%=15%.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r05.goal,Calculate interest charged on the original principal for each equal time period.,,unreviewed,UI/audio,
+g7r05.action.1,Mark original principal P and annual rate r.,,unreviewed,UI/audio,
+g7r05.action.2,Compute one year of interest Pr.,,unreviewed,UI/audio,
+g7r05.action.3,Add the same interest amount for each year on a timeline.,,unreviewed,UI/audio,
+g7r05.action.4,Separate total interest from principal plus interest and check the time unit.,,unreviewed,UI/audio,
+g7r05.consequence.1,The annual increment is constant because the reference principal remains P.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r05.debrief.1,"Simple interest is I=Prt, with rate and time in matching units.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r05.debrief.2,Accumulated amount is P+I.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r05.misconception.1,After each year calculate the next interest on the growing total.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r05.repair.1,Keep an original-principal marker fixed; growing-base interest belongs to a different model.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r05.transfer.question.1,"At simple interest, P=800 birr, r=5% per year, t=3 years.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r05.transfer.question.2,Find I and total.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r05.transfer.answer.1,I=800×0.05×3=120 birr; total=800+120=920 birr.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r06.goal,Calculate repeated growth when each period includes previous interest.,,unreviewed,UI/audio,
+g7r06.action.1,Start with P and mark the compounding period.,,unreviewed,UI/audio,
+g7r06.action.2,Calculate the period interest on the current balance.,,unreviewed,UI/audio,
+g7r06.action.3,Add it and move the new balance into the next period.,,unreviewed,UI/audio,
+g7r06.action.4,Compare the increments with a simple-interest timeline.,,unreviewed,UI/audio,
+g7r06.consequence.1,The second increment is larger because the first interest is now part of the base.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r06.debrief.1,"With constant rate r per compounding period and no payments, A=P(1+r)^n.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r06.debrief.2,Total interest is A−P; r and n refer to the same period.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r06.misconception.1,Compound interest equals Prn.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r06.repair.1,Calculate the second increment from the updated balance and compare with the fixed original base.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r06.transfer.question.1,1000 birr grows at 10% compounded annually for 2 years.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r06.transfer.answer.1,Year 1: 1000+100=1100.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r06.transfer.answer.2,Year 2: 1100+110=1210.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7r06.transfer.answer.3,Interest=210 birr; simple interest would be 200.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e01.goal,Combine packages while preserving what each symbol measures.,,unreviewed,UI/audio,
+g7e01.action.1,Assign x to the unknown contents of one identical bag.,,unreviewed,UI/audio,
+g7e01.action.2,Represent 3x and 2x as three and two bags.,,unreviewed,UI/audio,
+g7e01.action.3,Combine matching bags and keep loose units separate.,,unreviewed,UI/audio,
+g7e01.action.4,Compare x with x² tiles to reject unlike terms.,,unreviewed,UI/audio,
+g7e01.consequence.1,Bag coefficients add; a loose constant or square unit cannot be merged into a bag count.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e01.debrief.1,A variable represents a number.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e01.debrief.2,Like terms share the same variable factors and powers; ax+bx=(a+b)x.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e01.misconception.1,3x+2 becomes 5x.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e01.repair.1,Build three bags plus two loose units and compare with five complete bags.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e01.transfer.question.1,Simplify 4x+3+2x−1.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e01.transfer.answer.1,Combine x terms: 4x+2x=6x.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e01.transfer.answer.2,Combine constants: 3−1=2.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e01.transfer.answer.3,Result: 6x+2.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e02.goal,Unpack repeated mixed bundles into an equivalent expression.,,unreviewed,UI/audio,
+g7e02.action.1,Build a group containing x bags and b loose units.,,unreviewed,UI/audio,
+g7e02.action.2,Duplicate the whole group a times.,,unreviewed,UI/audio,
+g7e02.action.3,Collect bags and loose units separately.,,unreviewed,UI/audio,
+g7e02.action.4,Reverse the grouping and compare both expressions for a test value.,,unreviewed,UI/audio,
+g7e02.consequence.1,Every item in the brackets gets the multiplier; partial expansion leaves missing items.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e02.debrief.1,Distribution gives a(x+b)=ax+ab.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e02.debrief.2,"A negative multiplier reverses every signed term, not only the first.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e02.misconception.1,a(x+b)=ax+b.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e02.repair.1,Count the b loose units in every copied group and identify the omitted copies.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e02.transfer.question.1,Expand −2(x−3).,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e02.transfer.answer.1,−2×x + (−2)×(−3)=−2x+6.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e02.transfer.answer.2,At x=4 both expressions equal −2.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e03.goal,Find the unknown bag size while keeping two trays equal.,,unreviewed,UI/audio,
+g7e03.action.1,Build ax+b=c as equal trays of bags and loose units.,,unreviewed,UI/audio,
+g7e03.action.2,Remove b from both trays.,,unreviewed,UI/audio,
+g7e03.action.3,Partition both trays into a equal shares.,,unreviewed,UI/audio,
+g7e03.action.4,"Open one bag, state x and substitute into the original equation.",,unreviewed,UI/audio,
+g7e03.consequence.1,The trays remain equal after the same valid operation on both sides; a one-sided change breaks the equality.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e03.debrief.1,An equation asserts equal values.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e03.debrief.2,Applying the same addition/subtraction or multiplying/dividing by the same nonzero number preserves its solutions.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e03.misconception.1,Move a term across and change its sign without a reason.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e03.repair.1,Replay removing the same quantity from both sides; record that operation before simplifying.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e03.transfer.question.1,Solve 3x+4=19 and verify.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e03.transfer.answer.1,Subtract 4 from both sides: 3x=15.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e03.transfer.answer.2,Divide both by 3: x=5.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e03.transfer.answer.3,Check 3×5+4=19.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e04.goal,Recover a whole quantity from a fractional share and a fixed addition.,,unreviewed,UI/audio,
+g7e04.action.1,Show a/b of an unknown strip plus a constant equal to a known strip.,,unreviewed,UI/audio,
+g7e04.action.2,Remove the constant from both sides.,,unreviewed,UI/audio,
+g7e04.action.3,Split the remaining known strip into a pieces to find one b-th.,,unreviewed,UI/audio,
+g7e04.action.4,Combine b such pieces and substitute the resulting whole.,,unreviewed,UI/audio,
+g7e04.consequence.1,One numerator-unit becomes identifiable before the denominator-units are recombined into the whole.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e04.debrief.1,"Solving (a/b)x+c=d uses equality-preserving operations: x=(d−c)b/a, with a,b nonzero.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e04.misconception.1,Multiply the final remainder by a/b again.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e04.repair.1,The remainder is already a/b of the whole; find one b-th before rebuilding all b parts.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e04.transfer.question.1,Solve (2/3)x+5=13.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e04.transfer.answer.1,Subtract 5: (2/3)x=8.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e04.transfer.answer.2,One third is 4; three thirds give x=12.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e04.transfer.answer.3,Check (2/3)×12+5=13.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e05.goal,Locate a supply point from its two-coordinate address.,,unreviewed,UI/audio,
+g7e05.action.1,Mark origin and positive directions on perpendicular axes.,,unreviewed,UI/audio,
+g7e05.action.2,"Move horizontally by x, then vertically by y.",,unreviewed,UI/audio,
+g7e05.action.3,Place the point and read its ordered pair.,,unreviewed,UI/audio,
+g7e05.action.4,Swap coordinates to locate another point and explain the change.,,unreviewed,UI/audio,
+g7e05.consequence.1,The swapped address usually reaches a different point; negative coordinates locate opposite directions.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e05.debrief.1,"An ordered pair (x,y) gives horizontal coordinate first and vertical second.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e05.debrief.2,"The origin is (0,0).",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e05.misconception.1,"(−2,3) means two up and three left.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e05.repair.1,Trace the first movement along the x-axis and record the horizontal step first.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e05.transfer.question.1,"Locate (−3,2).",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e05.transfer.question.2,Which quadrant contains it?,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7e05.transfer.answer.1,"Move 3 units left and 2 up. x<0 and y>0, so the point is in quadrant II.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a01.goal,Build a quadrilateral that meets side and angle requirements.,,unreviewed,UI/audio,
+g7a01.action.1,Join four sides into a closed figure.,,unreviewed,UI/audio,
+g7a01.action.2,Adjust vertices while preserving the required parallel or equal sides.,,unreviewed,UI/audio,
+g7a01.action.3,Measure angles and test a right-angle requirement.,,unreviewed,UI/audio,
+g7a01.action.4,Classify the resulting figure in all applicable families.,,unreviewed,UI/audio,
+g7a01.consequence.1,A rhombus can tilt without becoming a square; a square meets rectangle and rhombus properties simultaneously.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a01.debrief.1,A parallelogram has both pairs of opposite sides parallel.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a01.debrief.2,A rectangle adds four right angles; a rhombus adds four equal sides; a square has both extra properties.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a01.misconception.1,A square cannot be a rectangle because it has its own name.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a01.repair.1,Test all rectangle properties on the square; categories can overlap.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a01.transfer.question.1,Is every rhombus a square?,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a01.transfer.question.2,Is every square a rhombus?,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a01.transfer.answer.1,"Not every rhombus has right angles, so not every rhombus is a square.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a01.transfer.answer.2,"Every square has four equal sides, so every square is a rhombus.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a02.goal,Choose how much boundary fencing and interior flooring a rectangle needs.,,unreviewed,UI/audio,
+g7a02.action.1,Trace and sum every outside edge.,,unreviewed,UI/audio,
+g7a02.action.2,Tile the interior with unit squares.,,unreviewed,UI/audio,
+g7a02.action.3,Change dimensions while holding one measure fixed.,,unreviewed,UI/audio,
+g7a02.action.4,Report both values using length and square units.,,unreviewed,UI/audio,
+g7a02.consequence.1,Equal perimeter rectangles can contain different tile counts; boundary and interior respond differently.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a02.debrief.1,Perimeter is total boundary length.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a02.debrief.2,Area counts square units covering the interior.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a02.misconception.1,Area and perimeter are interchangeable numbers.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a02.repair.1,"Compare 1×5 and 2×4 rectangles: perimeter 12 in both, areas 5 and 8.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a02.transfer.question.1,For a 7 m × 4 m rectangle find perimeter and area.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a02.transfer.answer.1,P=2(7+4)=22 m.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a02.transfer.answer.2,A=7×4=28 m².,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a03.goal,Cover a slanted plot with tiles by rearranging it into a rectangle.,,unreviewed,UI/audio,
+g7a03.action.1,Drop a perpendicular from the top edge to the base.,,unreviewed,UI/audio,
+g7a03.action.2,Cut the side triangle along that perpendicular.,,unreviewed,UI/audio,
+g7a03.action.3,Slide the triangle to the opposite side.,,unreviewed,UI/audio,
+g7a03.action.4,Count the rectangle tiles and compare with the original slanted plot.,,unreviewed,UI/audio,
+g7a03.consequence.1,The rearranged rectangle has the same area and perpendicular height; the sloping side is not its height.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a03.debrief.1,Parallelogram area is base × perpendicular height.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a03.debrief.2,Cutting and rearranging preserves area; perimeter need not be preserved.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a03.misconception.1,Use the slanted side as h.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a03.repair.1,Display a right-angle marker on the perpendicular and compare it with the sloping edge.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a03.transfer.question.1,"A parallelogram has base 9 cm, perpendicular height 4 cm, sloping side 5 cm.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a03.transfer.question.2,Find area.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a03.transfer.answer.1,A=9×4=36 cm².,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a03.transfer.answer.2,The 5 cm sloping side is not the perpendicular height.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a04.goal,Find a triangular covering as half of a matching doubled shape.,,unreviewed,UI/audio,
+g7a04.action.1,Copy a triangle with a marked base and perpendicular height.,,unreviewed,UI/audio,
+g7a04.action.2,Rotate the copy to form a parallelogram.,,unreviewed,UI/audio,
+g7a04.action.3,Calculate the combined area as bh.,,unreviewed,UI/audio,
+g7a04.action.4,Divide by two and verify both copies cover equal area.,,unreviewed,UI/audio,
+g7a04.consequence.1,"Two congruent triangles fill the doubled shape, so one needs half the tiles.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a04.debrief.1,"Triangle area is bh/2, where h is perpendicular to the chosen base, including an external altitude for an obtuse triangle.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a04.misconception.1,All three side lengths are needed to use A=bh/2.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a04.repair.1,Find the base-altitude pair; side lengths alone are a different representation.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a04.transfer.question.1,A triangle has base 12 m and perpendicular height 5 m.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a04.transfer.question.2,Find area.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a04.transfer.answer.1,"The doubled shape has 12×5=60 m², so the triangle has 60÷2=30 m².",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a05.goal,Measure a circular boundary and estimate the covering inside it.,,unreviewed,UI/audio,
+g7a05.action.1,Mark radius and diameter and compare d=2r.,,unreviewed,UI/audio,
+g7a05.action.2,Roll the boundary along a line to compare circumference with diameter.,,unreviewed,UI/audio,
+g7a05.action.3,Cut the disc into narrow sectors and alternate them into an approximate rectangle.,,unreviewed,UI/audio,
+g7a05.action.4,"Read limiting dimensions πr and r, then distinguish C=2πr from A=πr².",,unreviewed,UI/audio,
+g7a05.consequence.1,Rolling gives a length; sector rearrangement gives an area approaching a rectangle as sectors narrow.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a05.debrief.1,π is circumference/diameter.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a05.debrief.2,Circumference=2πr and circle area=πr².,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a05.debrief.3,Sector rearrangement motivates area; a finite jagged layout is an approximation.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a05.misconception.1,Use πd² for circle area.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a05.repair.1,Compare radius and diameter before squaring; substituting d=2r gives area πd²/4.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a05.transfer.question.1,For radius 7 cm use π=22/7 to find circumference and area.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a05.transfer.answer.1,C=2×(22/7)×7=44 cm.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a05.transfer.answer.2,A=(22/7)×49=154 cm².,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a06.goal,Cover a plot made from a rectangle and a triangle without overlap.,,unreviewed,UI/audio,
+g7a06.action.1,Mark the two parallel bases and perpendicular separation.,,unreviewed,UI/audio,
+g7a06.action.2,Split the trapezoid into a rectangle plus triangle.,,unreviewed,UI/audio,
+g7a06.action.3,Calculate each disjoint piece and add.,,unreviewed,UI/audio,
+g7a06.action.4,Recombine into A=(a+b)h/2 and trace the external boundary separately.,,unreviewed,UI/audio,
+g7a06.consequence.1,The pieces cover the entire plot once; internal cut lines add no perimeter.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a06.debrief.1,"A trapezoid with parallel bases a,b and perpendicular height h has area (a+b)h/2.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a06.debrief.2,Composite area sums disjoint pieces or subtracts a cut-out.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a06.misconception.1,Add every cut-line length to the perimeter.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a06.repair.1,Hide internal edges after recombination and trace only the exposed boundary.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a06.transfer.question.1,Parallel bases are 6 m and 10 m; height 4 m.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a06.transfer.question.2,Find area.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7a06.transfer.answer.1,Rectangle 6×4=24 m² and extra triangle (10−6)×4/2=8 m²; total 32 m².,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c01.goal,Match a replacement shape exactly to a template without resizing.,,unreviewed,UI/audio,
+g7c01.action.1,"Translate, rotate or reflect the candidate.",,unreviewed,UI/audio,
+g7c01.action.2,Overlay all vertices and edges.,,unreviewed,UI/audio,
+g7c01.action.3,Label which vertex meets each template vertex.,,unreviewed,UI/audio,
+g7c01.action.4,Write corresponding sides and the congruence statement in matching order.,,unreviewed,UI/audio,
+g7c01.consequence.1,A rigid match preserves every length and angle; an enlarged similar figure fails the overlay.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c01.debrief.1,Congruent figures have the same size and shape.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c01.debrief.2,"Triangle order records correspondence: ABC≅DEF means A↔D, B↔E, C↔F.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c01.misconception.1,Figures pointing in different directions cannot be congruent.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c01.repair.1,Rotate or reflect one without changing its dimensions and check the overlay.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c01.transfer.question.1,"If ABC≅PQR, which side corresponds to BC?",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c01.transfer.answer.1,"B↔Q and C↔R, so BC corresponds to QR.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c01.transfer.answer.2,AC corresponds to PR.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c02.goal,Build a unique triangle template from three side lengths.,,unreviewed,UI/audio,
+g7c02.action.1,Lay one side as a fixed base.,,unreviewed,UI/audio,
+g7c02.action.2,Draw radius constraints from both base endpoints for the other two sides.,,unreviewed,UI/audio,
+g7c02.action.3,Choose an intersection and close the triangle.,,unreviewed,UI/audio,
+g7c02.action.4,Reflect the alternate intersection and overlay it to justify congruence.,,unreviewed,UI/audio,
+g7c02.consequence.1,Two mirror placements exist but give congruent triangles; impossible side lengths produce no intersection.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c02.debrief.1,SSS: three pairs of corresponding equal sides establish triangle congruence.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c02.debrief.2,Triangle side lengths must satisfy strict triangle inequalities.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c02.misconception.1,Any three positive lengths form a triangle.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c02.repair.1,"Try 2,3,6; the short sides cannot meet, because 2+3<6.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c02.transfer.question.1,"Do sides 4,5,7 form a triangle?",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c02.transfer.question.2,Are two such triangles congruent?,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c02.transfer.answer.1,Yes: 4+5>7 and the other inequalities hold.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c02.transfer.answer.2,Two triangles with these three corresponding sides are congruent by SSS.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c03.goal,Make a rigid triangle from two lengths and their included angle.,,unreviewed,UI/audio,
+g7c03.action.1,Attach two specified rods at the same vertex.,,unreviewed,UI/audio,
+g7c03.action.2,Set the angle between those rods.,,unreviewed,UI/audio,
+g7c03.action.3,Connect their free endpoints.,,unreviewed,UI/audio,
+g7c03.action.4,Compare with another assembly and test why a nonincluded angle does not give the same guarantee.,,unreviewed,UI/audio,
+g7c03.consequence.1,The included hinge angle fixes the distance between rod endpoints; a free wrong hinge changes the third side.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c03.debrief.1,SAS congruence requires two corresponding side lengths and the included angle between them to be equal.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c03.debrief.2,An arbitrary side-side-angle claim is insufficient.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c03.misconception.1,Two sides and any angle always prove congruence.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c03.repair.1,"Highlight the angle between the known sides, then construct a different valid triangle when information is not included.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c03.transfer.question.1,"AB=DE=5, AC=DF=7, ∠A=∠D=60°.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c03.transfer.question.2,Is ABC≅DEF?,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c03.transfer.answer.1,"Yes by SAS, because ∠A and ∠D are included between the specified side pairs and correspondence is A↔D, B↔E, C↔F.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c04.goal,Rebuild a triangle and justify each fact used to prove a match.,,unreviewed,UI/audio,
+g7c04.action.1,Lay a specified base shared by two known endpoint angles.,,unreviewed,UI/audio,
+g7c04.action.2,Construct the two rays and find their intersection.,,unreviewed,UI/audio,
+g7c04.action.3,"Pair the equal angle, included side and equal angle facts.",,unreviewed,UI/audio,
+g7c04.action.4,Arrange statements with reasons and conclude ASA congruence.,,unreviewed,UI/audio,
+g7c04.consequence.1,The base length fixes scale while both rays fix the third vertex; equal angles alone would allow larger copies.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c04.debrief.1,ASA: two corresponding equal angles and the included equal side establish congruence.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c04.debrief.2,"A proof must connect each fact to a given, shared part or established property.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c04.misconception.1,Three equal angles prove congruence.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c04.repair.1,Keep both base angles but double the base; the new triangle is similar and larger.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c04.transfer.question.1,Two triangles have endpoint angles 40° and 70° on equal 6 cm bases.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c04.transfer.question.2,What proves congruence?,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c04.transfer.answer.1,The two equal angles and the equal side between them give ASA.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7c04.transfer.answer.2,The third angle is 180−40−70=70°.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d01.goal,Summarise every observation without losing or duplicating data.,,unreviewed,UI/audio,
+g7d01.action.1,Take one raw observation at a time.,,unreviewed,UI/audio,
+g7d01.action.2,"Add a tally to its category, grouping tallies in fives.",,unreviewed,UI/audio,
+g7d01.action.3,Convert tallies into frequency numbers.,,unreviewed,UI/audio,
+g7d01.action.4,Sum frequencies and compare with the raw observation count.,,unreviewed,UI/audio,
+g7d01.consequence.1,Each datum contributes once; the frequency total catches missing or duplicated observations.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d01.debrief.1,A frequency counts how often a value/category occurs.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d01.debrief.2,A frequency table preserves the total number of observations.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d01.misconception.1,A category label contributes one count regardless of how often it occurs.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d01.repair.1,Return to the raw list and move one observation per tally.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d01.transfer.question.1,"For 2,3,2,1,3,2, make a frequency table.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d01.transfer.answer.1,"1 occurs once, 2 occurs three times, 3 occurs twice; total 1+3+2=6 observations.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d02.goal,Allocate a whole circle to categories in proportion to their counts.,,unreviewed,UI/audio,
+g7d02.action.1,Count all observations as the whole.,,unreviewed,UI/audio,
+g7d02.action.2,Convert each frequency to a fraction of the total.,,unreviewed,UI/audio,
+g7d02.action.3,Multiply the fraction by 360° and turn the sector boundary.,,unreviewed,UI/audio,
+g7d02.action.4,Check sector angles total 360° and recover a count from one sector.,,unreviewed,UI/audio,
+g7d02.consequence.1,Larger shares get larger angles; all sectors exactly fill one complete turn.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d02.debrief.1,A pie-sector angle is frequency/total×360°.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d02.debrief.2,Count=angle/360°×total when the total is known.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d02.misconception.1,A 40° sector always represents 40 observations.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d02.repair.1,"Compare the same angle in totals 90 and 180; its fraction is constant, its count is not.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d02.transfer.question.1,"Of 40 learners, 10 choose a category.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d02.transfer.question.2,Find its sector angle.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d02.transfer.answer.1,"10/40×360°=90°, one quarter of the circle.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d03.goal,Redistribute unequal collected amounts into equal shares and name their average.,,unreviewed,UI/audio,
+g7d03.action.1,Build one stack for each datum.,,unreviewed,UI/audio,
+g7d03.action.2,Move units from taller to shorter stacks without changing the total.,,unreviewed,UI/audio,
+g7d03.action.3,Divide the total by the number of stacks.,,unreviewed,UI/audio,
+g7d03.action.4,Mark the equal height and compare it with the original data.,,unreviewed,UI/audio,
+g7d03.consequence.1,Total is conserved; the mean can be a fractional value absent from the original list.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d03.debrief.1,Arithmetic mean = sum of values/number of values.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d03.debrief.2,It is the equal share if the total is redistributed.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d03.misconception.1,The mean must be one of the original values.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d03.repair.1,Redistribute stacks 2 and 3 into two equal 2.5 shares.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d03.transfer.question.1,"Find the mean of 4,7,10.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d03.transfer.answer.1,Total=21 and there are 3 values.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d03.transfer.answer.2,Mean=21÷3=7.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d04.goal,Find the centre position of an ordered collection.,,unreviewed,UI/audio,
+g7d04.action.1,Sort every datum while retaining duplicate occurrences.,,unreviewed,UI/audio,
+g7d04.action.2,Remove one lowest and one highest position together.,,unreviewed,UI/audio,
+g7d04.action.3,For odd count select the final middle datum.,,unreviewed,UI/audio,
+g7d04.action.4,For even count average the final two central values.,,unreviewed,UI/audio,
+g7d04.consequence.1,"The median depends on ordered positions, not the original display order; an even-count median can lie between data values.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d04.debrief.1,"Median is the middle value of sorted data for odd count, or the mean of the two central values for even count.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d04.misconception.1,Pick the middle entry before sorting.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d04.repair.1,Shuffle the same data and show that unsorted middle entries change; sorted centre does not.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d04.transfer.question.1,"Find the median of 9,2,6,4.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d04.transfer.answer.1,"Sort: 2,4,6,9.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d04.transfer.answer.2,The central values are 4 and 6; median=(4+6)/2=5.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d05.goal,Identify which recorded value occurs most often.,,unreviewed,UI/audio,
+g7d05.action.1,Build frequencies from raw data.,,unreviewed,UI/audio,
+g7d05.action.2,Stack occurrences above each distinct value.,,unreviewed,UI/audio,
+g7d05.action.3,Select every value tied for the highest frequency.,,unreviewed,UI/audio,
+g7d05.action.4,"Compare a clear peak, tied peaks, and all-equal frequencies.",,unreviewed,UI/audio,
+g7d05.consequence.1,"A mode depends on occurrence count, not numerical size; two tallest stacks can yield two modes.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d05.debrief.1,Mode is a most frequent value.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d05.debrief.2,"Following this book, report no mode when all displayed distinct values have equal frequency; multiple unequal-frequency peaks may give multiple modes.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d05.misconception.1,The largest value is the mode.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d05.repair.1,"Use 2,2,2,9; the tallest frequency stack is at 2.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d05.transfer.question.1,"Find mode(s) of 1,1,2,3,3,4.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d05.transfer.answer.1,1 and 3 each occur twice; 2 and 4 once.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d05.transfer.answer.2,The two modes are 1 and 3.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d06.goal,Compare the spread of two data collections using their endpoint distance.,,unreviewed,UI/audio,
+g7d06.action.1,Place observations on a number line.,,unreviewed,UI/audio,
+g7d06.action.2,Identify minimum and maximum.,,unreviewed,UI/audio,
+g7d06.action.3,Measure the span maximum−minimum.,,unreviewed,UI/audio,
+g7d06.action.4,Move an extreme datum and compare range and centre measures.,,unreviewed,UI/audio,
+g7d06.consequence.1,Interior changes can leave range unchanged; an extreme change can alter it sharply.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d06.debrief.1,Range is maximum minus minimum.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d06.debrief.2,It measures endpoint spread and can be sensitive to extreme values.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d06.misconception.1,Range is the number of observations.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d06.repair.1,Count observations and measure endpoint distance separately.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d06.transfer.question.1,"Find range of −2,4,9,4.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d06.transfer.answer.1,Maximum=9; minimum=−2.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d06.transfer.answer.2,Range=9−(−2)=11.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d07.goal,Recover an unknown total before finding a missing value or combining groups.,,unreviewed,UI/audio,
+g7d07.action.1,Multiply a stated mean by its observation count to recover the total.,,unreviewed,UI/audio,
+g7d07.action.2,Subtract known values to find an unknown datum.,,unreviewed,UI/audio,
+g7d07.action.3,For two groups reconstruct each total separately.,,unreviewed,UI/audio,
+g7d07.action.4,"Add totals and divide by combined counts, then check the mean.",,unreviewed,UI/audio,
+g7d07.consequence.1,Groups with different counts contribute different weights; averaging two means alone can give the wrong result.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d07.debrief.1,Total=mean×count.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d07.debrief.2,"A combined mean is (n₁m₁+n₂m₂)/(n₁+n₂), with nonzero combined count.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d07.misconception.1,The mean of two groups is always (m₁+m₂)/2.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d07.repair.1,"Show two observations at 4 and four at 10; six values have mean 8, not 7.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d07.transfer.question.1,Two values have mean 4; four other values have mean 10.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d07.transfer.question.2,Find the mean of all six.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d07.transfer.answer.1,Totals are 2×4=8 and 4×10=40.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g7d07.transfer.answer.2,Combined mean=(8+40)/6=8.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q01.goal,Place each number in every number family it belongs to.,,unreviewed,UI/audio,
+g8q01.action.1,"Write a rational number as p/q with integer p,q and q≠0.",,unreviewed,UI/audio,
+g8q01.action.2,"Place counting numbers inside whole numbers, then integers, then rationals.",,unreviewed,UI/audio,
+g8q01.action.3,Rewrite an integer as n/1.,,unreviewed,UI/audio,
+g8q01.action.4,"Compare 0, a negative integer, and a noninteger fraction using all relevant memberships.",,unreviewed,UI/audio,
+g8q01.consequence.1,"A negative integer belongs to integers and rationals, while 0 is whole but not counting in this book’s convention.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q01.debrief.1,"A rational number can be written p/q with integers p,q and q≠0.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q01.debrief.2,Here counting numbers start at 1; whole numbers include 0; integers include negatives.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q01.misconception.1,A number written as a fraction cannot be an integer.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q01.repair.1,Simplify 6/3=2 and place it in every applicable set.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q01.transfer.question.1,Classify −4 and 3/2.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q01.transfer.answer.1,"−4 is an integer and rational, since −4=−4/1. 3/2 is rational but not an integer, whole or counting number.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q02.goal,Locate signed fractions and distinguish ordering from distance to zero.,,unreviewed,UI/audio,
+g8q02.action.1,Subdivide one unit interval into equal denominator-parts.,,unreviewed,UI/audio,
+g8q02.action.2,Locate positive and negative rational positions with those ticks.,,unreviewed,UI/audio,
+g8q02.action.3,Reflect through zero and measure distance.,,unreviewed,UI/audio,
+g8q02.action.4,Compare two positions using common subdivisions or a number line.,,unreviewed,UI/audio,
+g8q02.consequence.1,−3/4 lies left of −1/2 yet has greater distance from zero.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q02.debrief.1,Absolute value |x| is distance from zero and is nonnegative.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q02.debrief.2,Rational order follows number-line position; equivalent fractions permit comparison in equal-sized parts.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q02.misconception.1,A larger denominator always makes a fraction smaller.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q02.repair.1,"Compare 3/4 and 2/3 in twelfths, and keep numerators visible.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q02.transfer.question.1,"Which is greater, −3/4 or −1/2?",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q02.transfer.question.2,Find both absolute values.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q02.transfer.answer.1,"−1/2=−2/4 lies to the right of −3/4, so −1/2 is greater.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q02.transfer.answer.2,Absolute values are 3/4 and 1/2.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q03.goal,Combine or remove fractional lengths only after making their parts equal.,,unreviewed,UI/audio,
+g8q03.action.1,Place both quantities against the same whole.,,unreviewed,UI/audio,
+g8q03.action.2,Subdivide to a common denominator.,,unreviewed,UI/audio,
+g8q03.action.3,Merge signed shaded parts or remove the requested part.,,unreviewed,UI/audio,
+g8q03.action.4,"Count remaining common parts, simplify and verify on a number line.",,unreviewed,UI/audio,
+g8q03.consequence.1,Thirds and quarters become twelfths; denominator records part size and does not add.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q03.debrief.1,"To add/subtract fractions, express them with a common denominator and add/subtract numerators.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q03.debrief.2,Signs retain their integer meaning.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q03.misconception.1,1/3+1/4=2/7.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q03.repair.1,Overlay thirds and quarters; seven unequal pieces cannot name a common unit.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q03.transfer.question.1,Find −2/3+3/4.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q03.transfer.answer.1,Use twelfths: −8/12+9/12=1/12.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q03.transfer.answer.2,It is a small positive result.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q04.goal,Take a fraction of an already selected fraction of one plot.,,unreviewed,UI/audio,
+g8q04.action.1,Partition a rectangle into b vertical equal parts and select a.,,unreviewed,UI/audio,
+g8q04.action.2,Partition it into d horizontal equal parts and select c of those.,,unreviewed,UI/audio,
+g8q04.action.3,Identify the overlap as the requested part of a part.,,unreviewed,UI/audio,
+g8q04.action.4,Count ac selected cells among bd equal cells and simplify.,,unreviewed,UI/audio,
+g8q04.consequence.1,The overlap is smaller than either selected strip when both factors lie between zero and one.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q04.debrief.1,"For fractions, (a/b)(c/d)=ac/bd.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q04.debrief.2,The overlap model supports positive parts of a whole; signed factors require signed scaling rather than negative physical area.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q04.misconception.1,Multiplication always increases a number.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q04.repair.1,Select one half of three quarters and compare 3/8 with 3/4.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q04.transfer.question.1,Find (2/3)×(3/4) and explain the rectangle.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q04.transfer.answer.1,The 3×4 grid has 12 cells; the 2×3 overlap has 6.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q04.transfer.answer.2,Product=6/12=1/2.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q05.goal,"Find how many equal-size portions fit into the available amount, including a partial portion.",,unreviewed,UI/audio,
+g8q05.action.1,Show the available length a/b on a fixed unit strip.,,unreviewed,UI/audio,
+g8q05.action.2,Show one portion c/d and make equal-size subdivisions for both.,,unreviewed,UI/audio,
+g8q05.action.3,Fit full portion-lengths and measure any remainder as a fraction of one portion.,,unreviewed,UI/audio,
+g8q05.action.4,Record quotient × portion = available amount.,,unreviewed,UI/audio,
+g8q05.consequence.1,"Two thirds contains 2 and 2/3 quarter-portions; a remainder is measured relative to a portion, not the original whole.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q05.debrief.1,"a÷b asks how many b-sized portions fit into a, for b≠0.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q05.debrief.2,"In common units, (a/b)÷(c/d)=(ad)/(bc).",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q05.debrief.3,The reciprocal rule follows from comparing common unit counts.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q05.misconception.1,Divide numerator by numerator and denominator by denominator and discard a remainder.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q05.repair.1,"Partition into common twelfths: eight units divided into groups of three units gives 8/3 portions, not two.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q05.transfer.question.1,How many 1/4 L portions fit in 2/3 L?,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q05.transfer.answer.1,2/3=8/12 and 1/4=3/12. 8÷3=8/3=2⅔ portions.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q05.transfer.answer.2,Check (8/3)×(1/4)=2/3 L.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q06.goal,Recover the whole quantity when a known fraction of it is given.,,unreviewed,UI/audio,
+g8q06.action.1,Represent c/d of an unknown whole as the known amount.,,unreviewed,UI/audio,
+g8q06.action.2,Divide the known amount into c equal pieces to find one d-th.,,unreviewed,UI/audio,
+g8q06.action.3,Copy that piece d times to reconstruct the whole.,,unreviewed,UI/audio,
+g8q06.action.4,Write known ÷ (c/d) and multiply back to check.,,unreviewed,UI/audio,
+g8q06.consequence.1,Dividing by a proper fraction can produce a larger result because the given amount was only part of the whole.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q06.debrief.1,"If (c/d)x=a, then x=a÷(c/d)=a(d/c), with c,d nonzero.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q06.debrief.2,This inverse-scaling meaning differs from counting portions.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q06.misconception.1,Invert the dividend instead of the divisor.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q06.repair.1,Keep the known amount fixed and recover one denominator-part before rebuilding the whole.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q06.transfer.question.1,Three quarters of a sack is 18 kg.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q06.transfer.question.2,What is the whole mass?,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q06.transfer.answer.1,One quarter is 18÷3=6 kg; four quarters are 24 kg.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q06.transfer.answer.2,Equivalently 18÷(3/4)=18×4/3=24.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q07.goal,Allocate specified shares of a common budget and find the remainder.,,unreviewed,UI/audio,
+g8q07.action.1,Mark the total as one whole.,,unreviewed,UI/audio,
+g8q07.action.2,Allocate the first fraction of the original total.,,unreviewed,UI/audio,
+g8q07.action.3,Allocate the second fraction of the explicitly stated original total.,,unreviewed,UI/audio,
+g8q07.action.4,Find the remaining fraction and check all amounts add to the budget.,,unreviewed,UI/audio,
+g8q07.consequence.1,Every original-whole share and the remainder exactly fill the budget; changing the second base changes the problem.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q07.debrief.1,Fractions of a budget must name their reference whole.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q07.debrief.2,"If a and b are shares of the same whole, remainder is 1−a−b.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q07.misconception.1,The second fraction always applies to the remainder.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q07.repair.1,Highlight the stated base and calculate original-whole and remaining-whole versions side by side.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q07.transfer.question.1,"Of 600 birr, 1/3 and 1/4 of the original total are allocated.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q07.transfer.question.2,What remains?,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q07.transfer.answer.1,Allocated amounts: 200 and 150 birr.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q07.transfer.answer.2,"Remainder=600−350=250 birr, or 5/12 of the whole.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8q07.transfer.answer.3,Check 200+150+250=600.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p01.goal,Build a square nursery and connect side length to total plants.,,unreviewed,UI/audio,
+g8p01.action.1,Choose the same count for rows and columns.,,unreviewed,UI/audio,
+g8p01.action.2,Fill the square array.,,unreviewed,UI/audio,
+g8p01.action.3,Compare n² with 2n and label side versus area.,,unreviewed,UI/audio,
+g8p01.action.4,Use signed multiplication separately to compare (−n)² and −n².,,unreviewed,UI/audio,
+g8p01.consequence.1,Side length n produces n² cells; doubling a number is a different operation.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p01.consequence.2,Parentheses determine whether the sign is squared.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p01.debrief.1,The square of x is x×x.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p01.debrief.2,Geometric square area uses nonnegative side length; for signed numbers (−x)²=x² while −x²=−(x²).,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p01.misconception.1,x² means x×2.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p01.repair.1,Compare a 5×5 array with two rows of five.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p01.transfer.question.1,Find (−6)² and −6².,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p01.transfer.answer.1,(−6)²=(−6)(−6)=36.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p01.transfer.answer.2,−6² means −(6×6)=−36.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p02.goal,Recover a square’s side length from its area and distinguish root notation from equation solving.,,unreviewed,UI/audio,
+g8p02.action.1,Fill a square with a perfect-square number of tiles.,,unreviewed,UI/audio,
+g8p02.action.2,Adjust equal row/column counts to fit every tile.,,unreviewed,UI/audio,
+g8p02.action.3,Record the nonnegative side as √A.,,unreviewed,UI/audio,
+g8p02.action.4,Compare with both signed numbers that solve x²=A.,,unreviewed,UI/audio,
+g8p02.consequence.1,One nonnegative side length defines √A; a positive A gives two signed solutions to x²=A.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p02.debrief.1,"√A is the nonnegative number whose square is A, for A≥0 in real numbers.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p02.debrief.2,"For A>0, x²=A has solutions x=±√A. √(x²)=|x|.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p02.misconception.1,√25 is ±5.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p02.repair.1,Separate the square-side question from the equation x²=25; notation √25 denotes only 5.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p02.transfer.question.1,"Find √49, solve x²=49, and find √((−7)²).",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p02.transfer.answer.1,√49=7; x²=49 gives x=7 or −7. √((−7)²)=√49=7=|−7|.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p03.goal,Find a perfect square’s root by organising its factors into two identical groups.,,unreviewed,UI/audio,
+g8p03.action.1,Factor the integer completely into primes.,,unreviewed,UI/audio,
+g8p03.action.2,Pair identical prime factors.,,unreviewed,UI/audio,
+g8p03.action.3,Put one factor from each pair into each identical side group.,,unreviewed,UI/audio,
+g8p03.action.4,Multiply one group and square it to verify the result.,,unreviewed,UI/audio,
+g8p03.consequence.1,Every prime factor occurs an even number of times in a perfect square; each side uses half those factors.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p03.debrief.1,"If A=p₁^(2a₁)…pₖ^(2aₖ), then √A=p₁^a₁…pₖ^aₖ.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p03.debrief.2,Unpaired factors mean the integer is not a perfect square.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p03.misconception.1,Divide a perfect-square number by two to find its root.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p03.repair.1,"Factor 36=2×2×3×3; each side group is 2×3=6, while 18²≠36.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p03.transfer.question.1,Use prime factors to find √144.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p03.transfer.answer.1,144=2⁴×3².,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p03.transfer.answer.2,Take one factor from each pair: 2²×3=12.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p03.transfer.answer.3,Check 12²=144.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p04.goal,Estimate a root within a justified interval and check a table lookup’s scale.,,unreviewed,UI/audio,
+g8p04.action.1,Bracket a radicand between consecutive perfect squares.,,unreviewed,UI/audio,
+g8p04.action.2,Choose a candidate decimal side and square it.,,unreviewed,UI/audio,
+g8p04.action.3,Refine the lower/upper interval.,,unreviewed,UI/audio,
+g8p04.action.4,Read a supplied row/column table excerpt and verify its magnitude by squaring.,,unreviewed,UI/audio,
+g8p04.consequence.1,A candidate below the target area raises the lower bound; a candidate above it lowers the upper bound.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p04.consequence.2,Misplaced decimal points fail the magnitude check.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p04.debrief.1,"For nonnegative numbers, a²<N<b² implies a<√N<b.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p04.debrief.2,"A table/calculator approximation should be checked for row, column, decimal scale and rounding.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p04.misconception.1,√50=25 because half of 50 is 25.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p04.repair.1,Check 25² and bracket 50 between 7²=49 and 8²=64.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p04.transfer.question.1,Bracket √30 to one decimal place.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p04.transfer.answer.1,"5.4²=29.16<30 and 5.5²=30.25>30, so 5.4<√30<5.5.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p04.transfer.answer.2,Rounded to one decimal it is 5.5; that rounding needs checking against 5.45²=29.7025<30.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p05.goal,"Build equal-sided cubes, then infer a cube’s side from its unit-cube count.",,unreviewed,UI/audio,
+g8p05.action.1,Build an n×n base layer.,,unreviewed,UI/audio,
+g8p05.action.2,Stack n equal layers and count n³ cubes.,,unreviewed,UI/audio,
+g8p05.action.3,"Given a perfect cube, find an equal count in all three directions.",,unreviewed,UI/audio,
+g8p05.action.4,Compare signed cube and square results using multiplication.,,unreviewed,UI/audio,
+g8p05.consequence.1,"Side scaling affects three directions; a signed negative cube remains negative, while geometric side lengths stay positive.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p05.debrief.1,x³=x×x×x.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p05.debrief.2,"Cube root ∛A is the number x with x³=A; unlike real square roots, negative numbers have real cube roots.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p05.misconception.1,A cube of side 4 contains 12 unit cubes.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p05.repair.1,"Count 16 cubes per layer and four layers, giving 64.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p05.transfer.question.1,Find ∛64 and ∛(−27).,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p05.transfer.answer.1,"4³=64, so ∛64=4.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8p05.transfer.answer.2,"(−3)³=−27, so ∛(−27)=−3.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l01.goal,Plot a constant-rate relationship and recover its rule.,,unreviewed,UI/audio,
+g8l01.action.1,Choose at least three x-values.,,unreviewed,UI/audio,
+g8l01.action.2,Calculate y=mx+b for each and complete a table.,,unreviewed,UI/audio,
+g8l01.action.3,Plot ordered pairs on labelled axes.,,unreviewed,UI/audio,
+g8l01.action.4,Draw the straight line and test an additional point against the rule.,,unreviewed,UI/audio,
+g8l01.consequence.1,Equal x-increments produce equal y-increments; a wrongly calculated point breaks the line.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l01.debrief.1,A linear equation y=mx+b represents a straight-line relationship. m is change in y per unit change in x; b is y when x=0.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l01.misconception.1,Connect every plotted point even when one violates the equation.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l01.repair.1,Substitute the off-line point into the rule and repair its calculation before drawing.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l01.transfer.question.1,"For y=2x+1, give points at x=−1,0,2.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l01.transfer.answer.1,"The corresponding y-values are −1,1,5.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l01.transfer.answer.2,"Points: (−1,−1),(0,1),(2,5).",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l01.transfer.answer.3,Each satisfies y=2x+1.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l02.goal,"Show every allowed value, including whether the boundary itself is permitted.",,unreviewed,UI/audio,
+g8l02.action.1,Solve the equality to locate the boundary.,,unreviewed,UI/audio,
+g8l02.action.2,Test a value on each side in the original inequality.,,unreviewed,UI/audio,
+g8l02.action.3,Choose the valid direction and draw a number-line ray.,,unreviewed,UI/audio,
+g8l02.action.4,Use an open or closed boundary marker and test the boundary itself.,,unreviewed,UI/audio,
+g8l02.consequence.1,A strict inequality excludes its boundary; an inclusive inequality includes it.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l02.consequence.2,"The ray covers many solutions, not one point.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l02.debrief.1,x<a excludes a; x≤a includes a.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l02.debrief.2,Adding/subtracting the same value and multiplying/dividing by a positive number preserve order.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l02.misconception.1,An inequality has only the equality-boundary solution.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l02.repair.1,Test nearby values and show all passing positions on the ray.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l02.transfer.question.1,Solve 3x+2≤11 and show the boundary.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l02.transfer.answer.1,"3x≤9, so x≤3.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l02.transfer.answer.2,"A closed marker at 3 and a ray left show all real/rational solutions. x=3 gives 11≤11, true.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l03.goal,Transform an order statement through zero without losing which side is greater.,,unreviewed,UI/audio,
+g8l03.action.1,"Place two ordered values, such as 2<5, on a number line.",,unreviewed,UI/audio,
+g8l03.action.2,Multiply both positions by −1 and observe reflection across zero.,,unreviewed,UI/audio,
+g8l03.action.3,Compare −2 and −5 from left to right and reverse the comparison sign.,,unreviewed,UI/audio,
+g8l03.action.4,"Solve a negative-coefficient inequality, then test a valid and invalid value in the original.",,unreviewed,UI/audio,
+g8l03.consequence.1,"Negative scaling reverses the left/right order; −2 is to the right of −5, so −2>−5.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l03.debrief.1,Multiplying/dividing both sides of an inequality by a negative number reverses its direction.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l03.debrief.2,Reflection establishes order reversal; positive magnitude scaling preserves the reflected order.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l03.misconception.1,Changing sides reverses the inequality sign.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l03.repair.1,"Separate subtraction, which translates both positions, from multiplication by a negative, which reflects them.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l03.transfer.question.1,Solve −2x+4<10.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l03.transfer.answer.1,Subtract 4: −2x<6.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l03.transfer.answer.2,Divide by −2 and reverse: x>−3.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l03.transfer.answer.3,"Check x=0 gives 4<10; x=−4 gives 12<10, false. x=−3 is excluded.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l04.goal,Choose the greatest feasible whole number of items within a stated budget.,,unreviewed,UI/audio,
+g8l04.action.1,Translate fixed fee plus unit cost into an expression.,,unreviewed,UI/audio,
+g8l04.action.2,Write the budget as an inclusive upper bound.,,unreviewed,UI/audio,
+g8l04.action.3,Solve over numbers and then restrict to nonnegative whole counts.,,unreviewed,UI/audio,
+g8l04.action.4,Test the maximum accepted count and the next count against the budget.,,unreviewed,UI/audio,
+g8l04.consequence.1,A fractional mathematical boundary may permit only the whole count below it; the next purchase visibly exceeds the budget.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l04.debrief.1,A contextual inequality models a limit.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l04.debrief.2,"The solution must also respect its domain: whole item counts, nonnegative quantities and stated units.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l04.misconception.1,Round an upper bound to the nearest whole number.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l04.repair.1,Buy the rounded-up count and compare actual cost with the allowed budget.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l04.transfer.question.1,"Fee 10 birr plus 7 birr per item, budget 50 birr.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l04.transfer.question.2,Maximum items?,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l04.transfer.answer.1,10+7n≤50 gives n≤40/7≈5.714.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l04.transfer.answer.2,Whole nonnegative n gives maximum 5.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8l04.transfer.answer.3,Cost 45≤50; six items cost 52>50.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m01.goal,Resize a template while keeping its shape and distinguish an exact replacement.,,unreviewed,UI/audio,
+g8m01.action.1,Pair corresponding vertices in both figures.,,unreviewed,UI/audio,
+g8m01.action.2,Compare all corresponding angles.,,unreviewed,UI/audio,
+g8m01.action.3,Compute corresponding side ratios in the same direction.,,unreviewed,UI/audio,
+g8m01.action.4,Use a uniform scale to overlay shapes and decide similarity or congruence.,,unreviewed,UI/audio,
+g8m01.consequence.1,Uniform scale makes similar figures overlay; rigid movement alone works only when scale factor is one.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m01.debrief.1,Similar figures have equal corresponding angles and proportional corresponding sides.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m01.debrief.2,Congruence also requires matching size; similar scale factor 1 yields congruence.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m01.misconception.1,Equal angles alone prove any quadrilaterals similar.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m01.repair.1,Compare rectangles 2×3 and 2×5: angles match but side ratios do not.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m01.transfer.question.1,Are rectangles 3×5 and 6×10 similar?,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m01.transfer.question.2,Are they congruent?,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m01.transfer.answer.1,"Yes, corresponding side ratios are both 2 and all angles are right angles.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m01.transfer.answer.2,They are not congruent because lengths differ; scale factor is 2.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m02.goal,Build different-sized triangles with the same two angles and predict matching shape.,,unreviewed,UI/audio,
+g8m02.action.1,Set two base angles on a chosen base.,,unreviewed,UI/audio,
+g8m02.action.2,Construct the ray intersection.,,unreviewed,UI/audio,
+g8m02.action.3,Change the base length while keeping both angles.,,unreviewed,UI/audio,
+g8m02.action.4,Match all angles and corresponding side ratios.,,unreviewed,UI/audio,
+g8m02.consequence.1,The third angle remains the same while size changes; matching angles determine triangle shape but do not fix size.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m02.debrief.1,AA establishes triangle similarity: two equal corresponding angles force the third to match because angles sum to 180°.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m02.misconception.1,AA proves triangle congruence.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m02.repair.1,Double the base while preserving the angles; compare the longer sides with the original.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m02.transfer.question.1,Two triangles have angles 35° and 65°.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m02.transfer.question.2,Are they similar?,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m02.transfer.answer.1,Yes by AA.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m02.transfer.answer.2,Both third angles are 180−35−65=80°.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m02.transfer.answer.3,Congruence cannot be concluded without matching size.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m03.goal,Find a missing side while testing every required similarity condition.,,unreviewed,UI/audio,
+g8m03.action.1,Pair sides using the vertex map.,,unreviewed,UI/audio,
+g8m03.action.2,Calculate all known scale factors in one direction.,,unreviewed,UI/audio,
+g8m03.action.3,For SSS check three ratios; for SAS check two ratios and their included equal angle.,,unreviewed,UI/audio,
+g8m03.action.4,Use the common factor to build a missing side and check the full figure.,,unreviewed,UI/audio,
+g8m03.consequence.1,A single inconsistent ratio blocks the similarity claim; equal side differences do not suffice.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m03.debrief.1,SSS similarity requires three proportional side pairs.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m03.debrief.2,SAS similarity requires two proportional side pairs and equal included angles.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m03.misconception.1,Adding the same amount to all sides makes similar triangles.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m03.repair.1,"Compare 3,4,5 with 5,6,7: side differences are two, but ratios differ.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m03.transfer.question.1,"Triangle sides 4,6,8 correspond to 6,9,x.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m03.transfer.question.2,Find x if similar.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m03.transfer.answer.1,Scale factor=6/4=9/6=3/2.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m03.transfer.answer.2,Therefore x=8×3/2=12.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m03.transfer.answer.3,The third ratio also equals 3/2.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m04.goal,Estimate the boundary and covering needed for an enlarged design.,,unreviewed,UI/audio,
+g8m04.action.1,Scale every length by k.,,unreviewed,UI/audio,
+g8m04.action.2,Trace the new boundary and compare perimeter ratios.,,unreviewed,UI/audio,
+g8m04.action.3,Subdivide each original unit square into the k×k enlarged tile block.,,unreviewed,UI/audio,
+g8m04.action.4,Compare area ratios and recover k from a known area ratio.,,unreviewed,UI/audio,
+g8m04.consequence.1,A doubled boundary uses twice the length while each tile expands into four unit tiles.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m04.debrief.1,"For similar figures, lengths and perimeters scale by k; areas scale by k².",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m04.debrief.2,Ratios must be taken in the same direction.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m04.misconception.1,Doubling lengths doubles area.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m04.repair.1,Build a 2×2 enlarged copy of one unit tile and count its four cells.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m04.transfer.question.1,A similar triangle has scale factor 3; original perimeter 12 cm and area 8 cm².,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m04.transfer.question.2,Find new values.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m04.transfer.answer.1,Perimeter=3×12=36 cm.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8m04.transfer.answer.2,Area=3²×8=72 cm².,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t01.goal,Predict a triangle’s missing interior angle by rearranging its corners.,,unreviewed,UI/audio,
+g8t01.action.1,Construct a nondegenerate triangle and mark all three corners.,,unreviewed,UI/audio,
+g8t01.action.2,Cut copies of the corner regions.,,unreviewed,UI/audio,
+g8t01.action.3,Place the three corners adjacent along a straight line.,,unreviewed,UI/audio,
+g8t01.action.4,Measure the straight angle and calculate an unknown corner.,,unreviewed,UI/audio,
+g8t01.consequence.1,The corners align into 180°; a misidentified exterior corner prevents the straight-line fit.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t01.debrief.1,Interior angles of a Euclidean triangle sum to 180°.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t01.debrief.2,The action illustrates the relation; parallel-line angle reasoning provides an exact justification beyond approximate measurement.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t01.misconception.1,Every triangle has a 90° angle.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t01.repair.1,"Build a triangle with angles 50°,60°,70° and compare with the right-triangle case.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t01.transfer.question.1,Two triangle angles are 48° and 67°.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t01.transfer.question.2,Find the third.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t01.transfer.answer.1,Third=180−48−67=65°.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t02.goal,Find the outside turning angle without confusing it with the adjacent inside angle.,,unreviewed,UI/audio,
+g8t02.action.1,Extend one side past a vertex.,,unreviewed,UI/audio,
+g8t02.action.2,Mark the interior angle and its adjacent exterior angle.,,unreviewed,UI/audio,
+g8t02.action.3,Use their straight-angle sum to determine the exterior angle.,,unreviewed,UI/audio,
+g8t02.action.4,Compare with the two remote interior angles and explain equality.,,unreviewed,UI/audio,
+g8t02.consequence.1,The exterior angle and adjacent interior angle sum to 180°; the two other interiors exactly make the exterior.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t02.debrief.1,"A triangle’s exterior angle equals the sum of its two remote interior angles, when formed by extending one side.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t02.misconception.1,Add all three interior angles to get the exterior.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t02.repair.1,Mark the adjacent angle as the supplement and select only the two remote corners.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t02.transfer.question.1,Remote interior angles are 38° and 74°.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t02.transfer.question.2,Find exterior and adjacent interior.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t02.transfer.answer.1,Exterior=38+74=112°.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t02.transfer.answer.2,Adjacent interior=180−112=68°.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t03.goal,Relate each right-triangle leg to its projection on the hypotenuse.,,unreviewed,UI/audio,
+g8t03.action.1,"Drop the right-angle altitude to the hypotenuse and label projections p,q.",,unreviewed,UI/audio,
+g8t03.action.2,Match each small triangle with the whole triangle using AA.,,unreviewed,UI/audio,
+g8t03.action.3,Write each matching leg/hypotenuse proportion and derive leg²=c×adjacent projection.,,unreviewed,UI/audio,
+g8t03.action.4,Check both projection identities when using the converse.,,unreviewed,UI/audio,
+g8t03.consequence.1,"The leg’s square equals a rectangle of hypotenuse c and its adjacent projection, not the other projection.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t03.debrief.1,For right triangle ABC with right angle C and altitude CD to AB: AC²=AB×AD and BC²=AB×DB.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t03.debrief.2,"With the stated perpendicular construction, the corresponding conditions support the converse; keep the book’s two checks explicit.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t03.misconception.1,Pair a leg with either hypotenuse segment.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t03.repair.1,Trace the similar triangle vertex map and highlight the segment adjacent to that leg.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t03.transfer.question.1,"AB=25, AD=9, DB=16.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t03.transfer.question.2,Find AC and BC for the right triangle.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t03.transfer.answer.1,"AC²=25×9=225, so AC=15.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t03.transfer.answer.2,"BC²=25×16=400, so BC=20.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t03.transfer.answer.3,Check 15²+20²=25².,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t04.goal,Determine a missing right-triangle length by conserving area.,,unreviewed,UI/audio,
+g8t04.action.1,"Build four congruent right triangles with legs a,b in a square of side a+b.",,unreviewed,UI/audio,
+g8t04.action.2,Arrange them to leave a central square of side c.,,unreviewed,UI/audio,
+g8t04.action.3,Rearrange the same triangles to leave squares of sides a and b.,,unreviewed,UI/audio,
+g8t04.action.4,"Equate uncovered areas, then solve and verify the missing length.",,unreviewed,UI/audio,
+g8t04.consequence.1,The unchanged outer area and unchanged triangle area force c²=a²+b².,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t04.debrief.1,"In a right triangle, hypotenuse c opposite the right angle satisfies c²=a²+b².",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t04.debrief.2,This area relationship applies only with a right angle.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t04.misconception.1,Add the legs directly to get the hypotenuse.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t04.repair.1,Compare total leg path a+b with the diagonal; use their squared areas to find c.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t04.transfer.question.1,A ladder reaches 12 m high with its foot 5 m from the wall.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t04.transfer.question.2,Find its length.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t04.transfer.answer.1,The wall-ground angle is right.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t04.transfer.answer.2,Ladder c=√(12²+5²)=√169=13 m.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t05.goal,Check whether three measured lengths can form a right triangle.,,unreviewed,UI/audio,
+g8t05.action.1,Check strict triangle inequalities.,,unreviewed,UI/audio,
+g8t05.action.2,Identify the longest side as the candidate hypotenuse.,,unreviewed,UI/audio,
+g8t05.action.3,Compare its square with the sum of the other two squares.,,unreviewed,UI/audio,
+g8t05.action.4,"Conclude right triangle only when equality holds, then mark its opposite angle.",,unreviewed,UI/audio,
+g8t05.consequence.1,Lengths can form a valid triangle while failing the right-angle test; longest side identification prevents a wrong comparison.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t05.debrief.1,"Converse: if positive triangle sides satisfy c²=a²+b² with c longest, the opposite angle is 90°.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t05.misconception.1,Any triangle with three given lengths is right.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t05.repair.1,"Use 4,5,6 and compare 16+25=41 with 36.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t05.transfer.question.1,"Do 6,8,10 form a right triangle?",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t05.transfer.answer.1,They form a triangle since 6+8>10.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8t05.transfer.answer.2,"The largest side is 10; 6²+8²=36+64=100=10², so the opposite angle is right.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o01.goal,Construct and label the circle parts used in later theorems.,,unreviewed,UI/audio,
+g8o01.action.1,Set a centre O and a fixed radius.,,unreviewed,UI/audio,
+g8o01.action.2,"Join centre to rim for a radius, then two rim points for a chord.",,unreviewed,UI/audio,
+g8o01.action.3,Move a chord through O to make a diameter.,,unreviewed,UI/audio,
+g8o01.action.4,"Select the curved arc and bounded sector, distinguishing them from line segments.",,unreviewed,UI/audio,
+g8o01.consequence.1,Every diameter is a chord through the centre; an arbitrary chord is usually shorter and not twice the radius.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o01.debrief.1,A radius joins centre to circle.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o01.debrief.2,A chord joins two circle points; a diameter is a centre-crossing chord with length 2r.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o01.debrief.3,An arc is part of the circumference; a sector is a region bounded by two radii and an arc.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o01.misconception.1,Every line segment inside a circle is a radius.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o01.repair.1,"Test endpoint constraints: radius has one endpoint at centre, chord has both endpoints on the circle.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o01.transfer.question.1,Radius is 4.5 cm.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o01.transfer.question.2,Find diameter; must every chord equal it?,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o01.transfer.answer.1,Diameter=2×4.5=9 cm.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o01.transfer.answer.2,Other chords need not equal 9 cm; only centre-crossing chords are diameters.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o02.goal,Find a chord length using the centre-to-chord perpendicular.,,unreviewed,UI/audio,
+g8o02.action.1,Draw a radius to each chord endpoint.,,unreviewed,UI/audio,
+g8o02.action.2,Drop a perpendicular from centre to the chord.,,unreviewed,UI/audio,
+g8o02.action.3,Compare the two right triangles to show equal half-chords.,,unreviewed,UI/audio,
+g8o02.action.4,Use Pythagoras on one half and double it.,,unreviewed,UI/audio,
+g8o02.consequence.1,The perpendicular foot is the midpoint; each half-chord and distance to centre form a right triangle with radius as hypotenuse.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o02.debrief.1,A perpendicular from a circle’s centre to a chord bisects the chord.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o02.debrief.2,"If radius r and perpendicular distance d are known, half-chord=√(r²−d²).",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o02.misconception.1,Subtract the distance from the radius to get half the chord.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o02.repair.1,"Use the right-triangle square relation, not a linear subtraction of perpendicular lengths.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o02.transfer.question.1,"Radius 13 cm, centre-to-chord distance 5 cm.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o02.transfer.question.2,Find chord length.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o02.transfer.answer.1,Half-chord=√(13²−5²)=√144=12 cm.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o02.transfer.answer.2,Full chord=24 cm.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o03.goal,Find a viewing angle at the rim from its intercepted central angle.,,unreviewed,UI/audio,
+g8o03.action.1,"Choose arc endpoints A,B and display its intercepted arc.",,unreviewed,UI/audio,
+g8o03.action.2,Draw central angle AOB corresponding to that same arc.,,unreviewed,UI/audio,
+g8o03.action.3,Place C on the other arc and draw inscribed angle ACB.,,unreviewed,UI/audio,
+g8o03.action.4,Measure/derive the relationship and calculate either missing angle.,,unreviewed,UI/audio,
+g8o03.consequence.1,The inscribed angle is half the central angle intercepting the same arc; changing which arc is intercepted changes the comparison.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o03.debrief.1,An inscribed angle equals half the measure of its intercepted arc.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o03.debrief.2,"A central angle equals the measure of its corresponding arc, so the inscribed angle is half that central angle.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o03.misconception.1,Any rim angle is half any central angle in the circle.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o03.repair.1,Highlight both intercepted arcs; apply the relation only when the arcs match and C is not on the intercepted arc.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o03.transfer.question.1,The intercepted arc is 130°.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o03.transfer.question.2,Find its central and inscribed angles.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o03.transfer.answer.1,The corresponding central angle is 130°.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o03.transfer.answer.2,The inscribed angle is 130/2=65°.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o04.goal,Move a rim viewpoint while keeping the intercepted arc fixed.,,unreviewed,UI/audio,
+g8o04.action.1,Fix chord endpoints and the selected intercepted arc.,,unreviewed,UI/audio,
+g8o04.action.2,Move the viewing vertex only along the opposite arc.,,unreviewed,UI/audio,
+g8o04.action.3,Measure the inscribed angle at multiple allowed positions.,,unreviewed,UI/audio,
+g8o04.action.4,Set the chord as a diameter and predict the right angle.,,unreviewed,UI/audio,
+g8o04.consequence.1,All allowed viewpoints give the same angle; a diameter intercepts a 180° arc and gives 90°.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o04.debrief.1,Inscribed angles intercepting the same arc are equal.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o04.debrief.2,An angle subtending a diameter is a right angle.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o04.debrief.3,Crossing to the other side generally selects the other arc and changes the relation.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o04.misconception.1,Every angle with endpoints on a diameter is 180°.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o04.repair.1,"The arc is 180°, while its inscribed angle is half of that.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o04.transfer.question.1,"AB is a diameter and C lies on the circle away from A,B.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o04.transfer.question.2,Find ∠ACB.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o04.transfer.answer.1,"The intercepted semicircle measures 180°, so ∠ACB=180/2=90°.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o05.goal,Calculate an angle formed by crossing chords using the correct pair of opposite arcs.,,unreviewed,UI/audio,
+g8o05.action.1,Construct two chords crossing at an interior point M.,,unreviewed,UI/audio,
+g8o05.action.2,Mark the angle and its vertical opposite.,,unreviewed,UI/audio,
+g8o05.action.3,Highlight the two arcs intercepted by those opposite angles.,,unreviewed,UI/audio,
+g8o05.action.4,Take half their sum and check the adjacent angle is supplementary.,,unreviewed,UI/audio,
+g8o05.consequence.1,Both opposite intercepted arcs contribute; taking only one arc undercounts the interior angle.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o05.debrief.1,"For chords intersecting inside a circle, the angle measure equals half the sum of the two intercepted arc measures belonging to it and its vertical opposite.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o05.misconception.1,Use half the difference of arcs for an interior intersection.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o05.repair.1,Contrast the interior triangle/exterior-angle derivation with the given inside intersection; both intercepted arcs add.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o05.transfer.question.1,Opposite intercepted arcs measure 80° and 120°.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o05.transfer.question.2,Find angle and adjacent angle.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o05.transfer.answer.1,Angle=(80+120)/2=100°.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8o05.transfer.answer.2,Its adjacent angle=180−100=80°.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v01.goal,Choose a net that folds into the required solid and identify its parts.,,unreviewed,UI/audio,
+g8v01.action.1,Inspect polygonal faces or curved surfaces and base shapes.,,unreviewed,UI/audio,
+g8v01.action.2,Fold a net while matching edges.,,unreviewed,UI/audio,
+g8v01.action.3,"Count faces, edges and vertices of a prism or pyramid once each.",,unreviewed,UI/audio,
+g8v01.action.4,Compare with cylinder/cone curved surfaces and classify the solid.,,unreviewed,UI/audio,
+g8v01.consequence.1,Shared net edges merge when folded; overlap or a missing face prevents a closed solid.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v01.debrief.1,A prism has two congruent parallel polygon bases joined by parallelogram faces; a pyramid has one polygon base and triangular faces meeting at an apex.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v01.debrief.2,"Cylinders/cones have curved surfaces, so polygon-edge counting conventions must be stated.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v01.misconception.1,Count every edge in the flat net as a different solid edge.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v01.repair.1,Track paired seam edges as they become one edge in the solid.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v01.transfer.question.1,"How many faces, edges and vertices does a triangular prism have?",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v01.transfer.answer.1,"It has 2 triangular bases and 3 rectangular side faces: 5 faces, 9 edges and 6 vertices.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v02.goal,Buy covering for selected outer faces of a prism.,,unreviewed,UI/audio,
+g8v02.action.1,Unfold side faces into a strip of width equal to base perimeter.,,unreviewed,UI/audio,
+g8v02.action.2,Calculate lateral area as perimeter × prism height.,,unreviewed,UI/audio,
+g8v02.action.3,Add the two base areas for a closed solid.,,unreviewed,UI/audio,
+g8v02.action.4,Remove an excluded base only when the task specifies an open container.,,unreviewed,UI/audio,
+g8v02.consequence.1,"The side strip uses base perimeter, while each end uses base area; open/closed descriptions change the included faces.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v02.debrief.1,"For a right prism, lateral area=Ph and total closed surface area=Ph+2B, where P is base perimeter and B its area.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v02.misconception.1,Surface area is base area times height.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v02.repair.1,Compare a net’s square units with interior cube layers; B×h measures volume.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v02.transfer.question.1,A closed right rectangular prism is 4×3×5 cm.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v02.transfer.question.2,Find surface area.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v02.transfer.answer.1,"Base P=2(4+3)=14 cm, B=12 cm².",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v02.transfer.answer.2,Surface=14×5+2×12=94 cm².,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v03.goal,Measure a label around a cylinder and compare it with all closed surfaces.,,unreviewed,UI/audio,
+g8v03.action.1,Remove the two circular bases.,,unreviewed,UI/audio,
+g8v03.action.2,Cut the curved side vertically and unwrap it into a rectangle.,,unreviewed,UI/audio,
+g8v03.action.3,Match rectangle width to circumference 2πr and height to h.,,unreviewed,UI/audio,
+g8v03.action.4,Find lateral area and add two discs only for total closed surface.,,unreviewed,UI/audio,
+g8v03.consequence.1,"The label width is circumference, not diameter; the two base discs add area without adding height.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v03.debrief.1,Right cylinder lateral area=2πrh.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v03.debrief.2,Closed total surface=2πrh+2πr².,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v03.misconception.1,A cylinder label width is 2r.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v03.repair.1,Roll its circumference along the rectangle edge and show that 2r is only its diameter.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v03.transfer.question.1,"Radius 3 cm, height 8 cm.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v03.transfer.question.2,Give label area and closed surface exactly.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v03.transfer.answer.1,Label=2π×3×8=48π cm².,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v03.transfer.answer.2,Two bases=18π cm².,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v03.transfer.answer.3,Total=66π cm².,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v04.goal,Measure material for a sloping roof using its actual face height.,,unreviewed,UI/audio,
+g8v04.action.1,Identify vertical height inside the solid and slant height on a face.,,unreviewed,UI/audio,
+g8v04.action.2,For a regular pyramid unfold triangular sides and sum their areas.,,unreviewed,UI/audio,
+g8v04.action.3,For a right cone unwrap the curved side into a sector whose arc is 2πr.,,unreviewed,UI/audio,
+g8v04.action.4,Compute lateral area using slant height and add a base only if covered.,,unreviewed,UI/audio,
+g8v04.consequence.1,Face covering depends on slant height; vertical height measures interior rise and must first be converted using a right triangle when needed.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v04.debrief.1,"Regular right pyramid lateral area=Pl/2, with common face slant height l.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v04.debrief.2,Right cone lateral area=πrl.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v04.debrief.3,For a cone l²=h²+r²; for a square pyramid l²=h²+(s/2)².,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v04.misconception.1,Use the vertical height in every surface formula.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v04.repair.1,Highlight the triangle altitude lying on the face and derive it from the interior right triangle.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v04.transfer.question.1,A right cone has radius 3 cm and vertical height 4 cm.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v04.transfer.question.2,Find slant height and lateral area.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v04.transfer.answer.1,l=√(3²+4²)=5 cm.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v04.transfer.answer.2,Lateral area=π×3×5=15π cm²; closed total would add 9π to give 24π cm².,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v05.goal,Find how much space a box contains by filling it without gaps.,,unreviewed,UI/audio,
+g8v05.action.1,Fill one base layer with unit cubes.,,unreviewed,UI/audio,
+g8v05.action.2,Count the base layer as its area in square units.,,unreviewed,UI/audio,
+g8v05.action.3,Stack the stated number of equal layers through perpendicular height.,,unreviewed,UI/audio,
+g8v05.action.4,Count all cubes and compare with B×h.,,unreviewed,UI/audio,
+g8v05.consequence.1,Each new layer adds the same base count; the result uses cubic units and differs from exterior surface area.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v05.debrief.1,Volume counts unit cubes occupying the interior.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v05.debrief.2,"For a prism V=B×h, where h is perpendicular separation of parallel bases.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v05.debrief.3,Rectangular prism volume=lwh.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v05.misconception.1,"Add length, width and height to find volume.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v05.repair.1,"Build 4×3 cubes in each layer, then stack two layers: 24 cubes, not 9.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v05.transfer.question.1,A rectangular box is 6×4×3 cm.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v05.transfer.question.2,Find volume.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v05.transfer.answer.1,Base layer has 6×4=24 unit cubes.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v05.transfer.answer.2,Three layers contain 24×3=72 cm³.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v06.goal,Find a cylindrical container’s capacity and express it in litres when dimensions use centimetres.,,unreviewed,UI/audio,
+g8v06.action.1,Identify radius from a diameter if necessary.,,unreviewed,UI/audio,
+g8v06.action.2,Calculate circular base area.,,unreviewed,UI/audio,
+g8v06.action.3,Stack equal circular layers through perpendicular height.,,unreviewed,UI/audio,
+g8v06.action.4,Convert cm³ to litres using 1000 cm³=1 L and verify the unit.,,unreviewed,UI/audio,
+g8v06.consequence.1,Doubling radius quadruples each layer’s area; diameter substituted as radius gives four times too much volume.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v06.debrief.1,Right-cylinder volume=πr²h.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v06.debrief.2,One litre is 1000 cm³.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v06.debrief.3,Capacity and volume conversion require consistent length units before multiplication.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v06.misconception.1,Use the diameter in πr²h.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v06.repair.1,Split the diameter into two radii and compare the two proposed base areas.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v06.transfer.question.1,"Diameter 14 cm, height 20 cm.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v06.transfer.question.2,Use π=22/7; find capacity in litres.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v06.transfer.answer.1,r=7 cm.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8v06.transfer.answer.2,V=(22/7)×7²×20=3080 cm³=3.08 L.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b01.goal,Decide whether a proposed result can occur from a known collection.,,unreviewed,UI/audio,
+g8b01.action.1,Inspect every token type in the bag.,,unreviewed,UI/audio,
+g8b01.action.2,Mark outcomes satisfying the event.,,unreviewed,UI/audio,
+g8b01.action.3,Try to construct a counterexample to certainty.,,unreviewed,UI/audio,
+g8b01.action.4,"Classify all, none or some satisfying outcomes and place the probability on 0–1.",,unreviewed,UI/audio,
+g8b01.consequence.1,A missing token type cannot be drawn; an event covering every possible token is certain even when the exact token is unknown.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b01.debrief.1,"An impossible event has probability 0, a certain event 1, and other possible events lie between when outcomes have positive chance.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b01.misconception.1,Possible means probability 1/2.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b01.repair.1,Compare one red token among nine blue tokens with five red among five blue; both are possible with different probabilities.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b01.transfer.question.1,"A bag contains only red and blue tokens, at least one of each.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b01.transfer.question.2,Classify drawing green and drawing red or blue.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b01.transfer.answer.1,"Green is impossible, probability 0.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b01.transfer.answer.2,"Red or blue is certain, probability 1.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b02.goal,List every possible outcome of an experiment without omission or double counting.,,unreviewed,UI/audio,
+g8b02.action.1,List first-stage outcomes.,,unreviewed,UI/audio,
+g8b02.action.2,Attach every second-stage outcome to each first-stage branch.,,unreviewed,UI/audio,
+g8b02.action.3,Label each full path as one ordered outcome.,,unreviewed,UI/audio,
+g8b02.action.4,Count complete paths and collect the event subset.,,unreviewed,UI/audio,
+g8b02.consequence.1,"HT and TH are distinct ordered results for two labelled coin tosses, even though both contain one head.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b02.debrief.1,A sample space contains all possible outcomes.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b02.debrief.2,An event is a subset.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b02.debrief.3,Ordered stage outcomes distinguish which stage produced each result.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b02.misconception.1,"Two fair coins have three equally likely outcomes: zero, one or two heads.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b02.repair.1,"Build HH,HT,TH,TT; one-head count corresponds to two elementary outcomes.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b02.transfer.question.1,List two labelled fair-coin outcomes and P(exactly one head).,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b02.transfer.answer.1,"S={HH,HT,TH,TT}.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b02.transfer.answer.2,"Exactly one head gives {HT,TH}, so probability=2/4=1/2.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b03.goal,Find a sum event by counting fair dice pairs rather than treating sums as equal.,,unreviewed,UI/audio,
+g8b03.action.1,Place first die outcomes along rows and second die outcomes along columns.,,unreviewed,UI/audio,
+g8b03.action.2,Fill all 36 ordered cells.,,unreviewed,UI/audio,
+g8b03.action.3,Highlight every cell whose sum meets the event.,,unreviewed,UI/audio,
+g8b03.action.4,Count favourable cells and divide by 36.,,unreviewed,UI/audio,
+g8b03.consequence.1,Different sums occupy different numbers of cells; sum 7 has six outcomes but sum 2 has one.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b03.debrief.1,"For two independent fair six-sided dice, the 36 ordered pairs are equally likely.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b03.debrief.2,"Their sums are not equally likely, so probability must count the underlying pairs.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b03.misconception.1,"There are 11 possible sums, so every sum has probability 1/11.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b03.repair.1,Count cells on each diagonal; compare the one cell for sum 2 with six for sum 7.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b03.transfer.question.1,Find P(sum=8) with two fair dice.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b03.transfer.answer.1,"Favourable pairs: (2,6),(3,5),(4,4),(5,3),(6,2).",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b03.transfer.answer.2,Probability=5/36.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b04.goal,Compute the chance of a colour using individual tokens as equally likely outcomes.,,unreviewed,UI/audio,
+g8b04.action.1,Count individual tokens rather than distinct colours.,,unreviewed,UI/audio,
+g8b04.action.2,Identify all tokens satisfying the event.,,unreviewed,UI/audio,
+g8b04.action.3,Form favourable/total and simplify.,,unreviewed,UI/audio,
+g8b04.action.4,Compare with a spinner having unequal sector sizes to decide when simple label-counting fails.,,unreviewed,UI/audio,
+g8b04.consequence.1,Two colours do not automatically mean equal chances; three red and one blue token give red chance 3/4.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b04.debrief.1,"For a finite equally likely sample space, P(E)=n(E)/n(S).",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b04.debrief.2,The counting formula needs equal likelihood of elementary outcomes; colour labels or unequal spinner sectors may not be equally likely.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b04.misconception.1,One of two colours means probability 1/2.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b04.repair.1,Give every individual token an equal selection chance and count how many belong to each colour.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b04.transfer.question.1,A bag has 3 red and 5 blue tokens.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b04.transfer.question.2,"Randomly select one, each token equally likely.",,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b04.transfer.question.3,Find P(red).,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b04.transfer.answer.1,Eight tokens total; three favourable.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b04.transfer.answer.2,P(red)=3/8.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b04.transfer.answer.3,P(blue)=5/8 and they sum to 1.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b05.goal,Use recorded trials to estimate a chance while keeping the theoretical model distinct.,,unreviewed,UI/audio,
+g8b05.action.1,Predict chance from a stated fair model.,,unreviewed,UI/audio,
+g8b05.action.2,Run or inspect repeated trials and tally event occurrences.,,unreviewed,UI/audio,
+g8b05.action.3,Compute observed frequency/number of trials.,,unreviewed,UI/audio,
+g8b05.action.4,Compare batches and explain why short-run counts need not match the prediction exactly.,,unreviewed,UI/audio,
+g8b05.consequence.1,Trial proportions vary; an observed run of heads does not force the next fair independent toss to be tails.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b05.debrief.1,Theoretical probability follows the model; experimental relative frequency is observed event count/trials.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b05.debrief.2,More trials can improve estimation but do not guarantee exact equality or monotonic improvement.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b05.misconception.1,Five heads in a row makes tails certain next.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b05.repair.1,Keep the next-trial model unchanged and compare several independent continuations.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b05.transfer.question.1,A fair coin shows heads 13 times in 20 trials.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b05.transfer.question.2,Give experimental and theoretical probabilities.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b05.transfer.answer.1,Observed frequency=13/20=0.65.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b05.transfer.answer.2,The fair-coin model gives P(head)=1/2.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
+g8b05.transfer.answer.3,The difference can occur by chance; next independent toss remains 1/2.,,unreviewed,UI/audio,Reviewer should keep mathematical symbols/units and prerequisite vocabulary consistent.
