@@ -11,3 +11,5 @@ The exact guided-source optimized Android build succeeded. ZIP integrity and its
 `b8084f867129e170bbd91e8d870bf98d0ff5f8e123ea4837aad59639991bcdc7`
 
 Translations remain unreviewed draft copy. No attached native device is available; installation, upgrade, process restart and real learner comprehension are phone-test outcomes, not established by these automated checks. Complete current-year exam coverage, science courses and English literacy beyond ONE–FOUR remain outside this preview.
+
+The published guided source also passed the internal browser smoke check at 320px and 390px. Instructions were present by default and the Taphadhu button reached the board. A wrong answer was evaluated without a reward, its correction produced an independent completion, and offline reload retained the exact progress record and opened an interactive next lesson. There were no external requests or JavaScript exceptions. The browser loader was warmed under service-worker control before switching offline; this check does not establish Android process-restart behavior.
